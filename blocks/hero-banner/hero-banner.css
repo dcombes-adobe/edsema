@@ -1,0 +1,87 @@
+/* Full-width dark section with padding */
+.hero-banner-container {
+  background-color: var(--dark-color);
+}
+
+.hero-banner {
+  position: relative;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Background image (first row) */
+.hero-banner > div:first-child {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-banner > div:first-child p {
+  margin: 0;
+  height: 100%;
+}
+
+.hero-banner > div:first-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Dark overlay */
+.hero-banner > div:first-child::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgb(0 0 0 / 80%) 0%, rgb(0 0 0 / 40%) 50%, rgb(0 0 0 / 20%) 100%);
+}
+
+/* Text content (second row) */
+.hero-banner > div:last-child {
+  position: relative;
+  z-index: 2;
+  padding: 40px 24px;
+  color: #fff;
+}
+
+.hero-banner h2 {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: var(--heading-font-size-xxl);
+}
+
+.hero-banner > div:last-child > div:nth-child(2) {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #fff;
+  margin-bottom: 24px;
+  max-width: 600px;
+}
+
+.hero-banner p.button-wrapper {
+  margin: 0;
+}
+
+.hero-banner a.button:any-link {
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+.hero-banner a.button:hover {
+  background-color: #f0f0f0;
+  border-color: #f0f0f0;
+}
+
+@media (width >= 900px) {
+  .hero-banner > div:last-child {
+    box-sizing: border-box;
+    padding: 64px;
+    max-width: 672px;
+  }
+}

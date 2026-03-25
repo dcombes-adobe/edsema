@@ -1,0 +1,83 @@
+.columns-faq > div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.columns-faq img {
+  width: 100%;
+}
+
+.columns-faq > div > div {
+  order: 1;
+}
+
+.columns-faq > div > .columns-faq-img-col {
+  order: 0;
+}
+
+.columns-faq > div > .columns-faq-img-col img {
+  display: block;
+}
+
+/* Left column - heading */
+.columns-faq > div > div:first-child h2 {
+  margin-top: 0;
+}
+
+.columns-faq > div > div:first-child p {
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+/* Right column - FAQ items */
+.columns-faq > div > div:last-child p {
+  margin: 0;
+}
+
+/* Question lines (odd) */
+.columns-faq > div > div:last-child p:nth-child(odd) {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+  position: relative;
+  padding-right: 40px;
+}
+
+/* Plus icon for FAQ questions */
+.columns-faq > div > div:last-child p:nth-child(odd)::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+/* Answer lines (even) - hidden by default like accordion */
+.columns-faq > div > div:last-child p:nth-child(even) {
+  font-size: var(--body-font-size-s);
+  color: var(--text-secondary-color);
+  line-height: 1.6;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+@media (width >= 900px) {
+  .columns-faq > div {
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 64px;
+  }
+
+  .columns-faq > div > div {
+    flex: 1;
+    order: unset;
+  }
+}

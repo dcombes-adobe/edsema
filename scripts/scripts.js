@@ -117,6 +117,8 @@ function decorateButtons(main) {
  * Decorates the main element.
  * @param {Element} main The main element
  */
+export function moveInstrumentation() { /* no-op for doc projects */ }
+
 // eslint-disable-next-line import/prefer-default-export
 export function decorateMain(main) {
   decorateIcons(main);

@@ -137,6 +137,17 @@ export default async function decorate(block) {
     brandLink.closest('.button-container').className = '';
   }
 
+  // Clean up tools button styling (Subscribe link)
+  const navTools = nav.querySelector('.nav-tools');
+  if (navTools) {
+    const toolsLink = navTools.querySelector('.button');
+    if (toolsLink) {
+      toolsLink.className = '';
+      const wrapper = toolsLink.closest('.button-container');
+      if (wrapper) wrapper.className = '';
+    }
+  }
+
   const navSections = nav.querySelector('.nav-sections');
   if (navSections) {
     navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
