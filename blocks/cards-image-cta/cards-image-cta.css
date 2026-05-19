@@ -3,6 +3,10 @@
  * Extracted from source: .homepage-image-cta-row on nottingham.ac.uk
  */
 
+.cards-image-cta-wrapper {
+  margin-top: 64px;
+}
+
 .cards-image-cta > ul {
   list-style: none;
   margin: 0;
