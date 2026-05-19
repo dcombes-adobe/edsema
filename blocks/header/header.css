@@ -82,7 +82,7 @@ header nav[aria-expanded='true'] .nav-hamburger button {
 header nav .nav-hamburger button {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   height: auto;
   margin: 0;
   border: 1px solid rgb(255 255 255 / 60%);
@@ -95,6 +95,10 @@ header nav .nav-hamburger button {
   font-weight: 400;
   cursor: pointer;
   white-space: nowrap;
+}
+
+header nav[aria-expanded='false'] .nav-hamburger button::before {
+  content: 'Menu';
 }
 
 header nav .nav-hamburger button:hover {
@@ -175,19 +179,19 @@ header nav > .section {
   display: none;
 }
 
-/* Brand section: first .section (no ul) - show it */
-header nav > .section:not(:has(ul)):first-of-type {
+/* Brand section: first div.section (use nth-of-type for div) */
+header nav > div.section:nth-of-type(2) {
   display: flex;
   align-items: center;
   flex: 0 0 auto;
   order: 1;
 }
 
-header nav > .section:not(:has(ul)):first-of-type .default-content-wrapper {
+header nav > div.section:nth-of-type(2) .default-content-wrapper {
   margin: 0;
 }
 
-header nav > .section:not(:has(ul)):first-of-type a {
+header nav > div.section:nth-of-type(2) a {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -199,7 +203,7 @@ header nav > .section:not(:has(ul)):first-of-type a {
   text-decoration: none;
 }
 
-header nav > .section:not(:has(ul)):first-of-type a::before {
+header nav > div.section:nth-of-type(2) a::before {
   content: '';
   display: block;
   width: 44px;
@@ -209,8 +213,8 @@ header nav > .section:not(:has(ul)):first-of-type a::before {
   flex-shrink: 0;
 }
 
-/* Search section: last .section without a ul - show as search bar */
-header nav > .section:not(:has(ul)):last-of-type {
+/* Search section: last div.section - show as search bar */
+header nav > div.section:last-of-type {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,47 +222,47 @@ header nav > .section:not(:has(ul)):last-of-type {
   order: 2;
 }
 
-header nav > .section:not(:has(ul)):last-of-type .default-content-wrapper {
+header nav > div.section:last-of-type .default-content-wrapper {
   width: 100%;
   max-width: 500px;
   margin: 0;
 }
 
 /* Only show first paragraph (search) in collapsed state */
-header nav > .section:not(:has(ul)):last-of-type p {
+header nav > div.section:last-of-type p {
   margin: 0;
-  padding: 10px 16px 10px 40px;
-  background-color: rgb(255 255 255 / 15%);
+  padding: 12px 16px 12px 44px;
+  background-color: #fff;
   border-radius: 9999px;
   font-size: 14px;
-  color: rgb(255 255 255 / 70%);
+  color: rgb(100 100 100);
   position: relative;
 }
 
-header nav > .section:not(:has(ul)):last-of-type p:not(:first-child) {
+header nav > div.section:last-of-type p:not(:first-child) {
   display: none;
 }
 
-header nav > .section:not(:has(ul)):last-of-type p::before {
+header nav > div.section:last-of-type p::before {
   content: '';
   position: absolute;
-  left: 14px;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
   width: 14px;
   height: 14px;
-  border: 2px solid rgb(255 255 255 / 70%);
+  border: 2px solid rgb(100 100 100);
   border-radius: 50%;
 }
 
-header nav > .section:not(:has(ul)):last-of-type p::after {
+header nav > div.section:last-of-type p::after {
   content: '';
   position: absolute;
-  left: 27px;
-  top: 58%;
+  left: 29px;
+  top: 60%;
   width: 2px;
   height: 6px;
-  background: rgb(255 255 255 / 70%);
+  background: rgb(100 100 100);
   transform: rotate(-45deg);
 }
 
@@ -349,7 +353,7 @@ header nav[aria-expanded='true'] > .section:has(ul) > .default-content-wrapper >
 }
 
 /* Search/tools section in expanded state: stays at top in header bar position */
-header nav[aria-expanded='true'] > .section:not(:has(ul)):last-of-type {
+header nav[aria-expanded='true'] > .section:last-child {
   order: 2;
   flex: 1;
   width: auto;
@@ -359,11 +363,11 @@ header nav[aria-expanded='true'] > .section:not(:has(ul)):last-of-type {
 }
 
 /* Extra links (Current students, Alumni, UK/Malaysia/China) shown at bottom */
-header nav[aria-expanded='true'] > .section:not(:has(ul)):last-of-type .default-content-wrapper {
+header nav[aria-expanded='true'] > .section:last-child .default-content-wrapper {
   display: contents;
 }
 
-header nav[aria-expanded='true'] > .section:not(:has(ul)):last-of-type p:not(:first-child) {
+header nav[aria-expanded='true'] > .section:last-child p:not(:first-child) {
   display: block;
   position: fixed;
   bottom: 60px;
@@ -375,20 +379,20 @@ header nav[aria-expanded='true'] > .section:not(:has(ul)):last-of-type p:not(:fi
   color: rgb(255 255 255 / 80%);
 }
 
-header nav[aria-expanded='true'] > .section:not(:has(ul)):last-of-type p:nth-child(3) {
+header nav[aria-expanded='true'] > .section:last-child p:nth-child(3) {
   bottom: 36px;
 }
 
-header nav[aria-expanded='true'] > .section:not(:has(ul)):last-of-type p:nth-child(4) {
+header nav[aria-expanded='true'] > .section:last-child p:nth-child(4) {
   bottom: 12px;
 }
 
-header nav[aria-expanded='true'] > .section:not(:has(ul)):last-of-type p:not(:first-child)::before,
-header nav[aria-expanded='true'] > .section:not(:has(ul)):last-of-type p:not(:first-child)::after {
+header nav[aria-expanded='true'] > .section:last-child p:not(:first-child)::before,
+header nav[aria-expanded='true'] > .section:last-child p:not(:first-child)::after {
   display: none;
 }
 
-header nav[aria-expanded='true'] > .section:not(:has(ul)):last-of-type p:not(:first-child) a {
+header nav[aria-expanded='true'] > .section:last-child p:not(:first-child) a {
   color: rgb(255 255 255 / 80%);
   text-decoration: underline;
   font-size: 14px;
