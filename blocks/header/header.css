@@ -27,13 +27,19 @@ header nav {
   overflow: hidden;
 }
 
+/* EXPANDED: full-screen dark flyout */
 header nav[aria-expanded='true'] {
+  position: fixed;
+  inset: 0;
+  max-width: 100%;
+  height: 100vh;
+  overflow-y: auto;
   flex-wrap: wrap;
-  height: auto;
-  min-height: 100dvh;
   align-content: flex-start;
+  align-items: flex-start;
   background-color: var(--dark-color);
-  overflow: visible;
+  padding: 24px;
+  z-index: 200;
 }
 
 header nav p {
@@ -50,12 +56,27 @@ header nav a:hover {
   opacity: 0.8;
 }
 
-/* hamburger - styled as Menu pill button, always visible on right */
+/* hamburger - pill button on the right */
 header nav .nav-hamburger {
   order: 3;
   flex: 0 0 auto;
   display: flex;
   visibility: visible;
+}
+
+header nav[aria-expanded='true'] .nav-hamburger {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+header nav[aria-expanded='true'] .nav-hamburger button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 0;
+  justify-content: center;
+  border-color: #deb406;
 }
 
 header nav .nav-hamburger button {
@@ -134,12 +155,12 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
   transform: rotate(-45deg);
 }
 
-/* brand - logo + university name (assigned by JS but targets wrong element) */
+/* brand - hidden (JS assigns to wrong element) */
 header .nav-brand {
   display: none;
 }
 
-/* sections - nav links hidden */
+/* sections/tools - hidden (JS assigns to wrong elements) */
 header nav .nav-sections {
   display: none;
   visibility: hidden;
@@ -155,18 +176,13 @@ header nav > .section {
 }
 
 /* Brand section: first .section (no ul) - show it */
-header nav > .section:not(:has(ul)) {
+header nav > .section:not(:has(ul)):first-of-type {
   display: flex;
   align-items: center;
   flex: 0 0 auto;
+  order: 1;
 }
 
-/* The section with a ul is the nav links - keep hidden */
-header nav > .section:has(ul) {
-  display: none;
-}
-
-/* Brand styling */
 header nav > .section:not(:has(ul)):first-of-type .default-content-wrapper {
   margin: 0;
 }
@@ -193,7 +209,7 @@ header nav > .section:not(:has(ul)):first-of-type a::before {
   flex-shrink: 0;
 }
 
-/* Search section: last .section without a ul */
+/* Search section: last .section without a ul - show as search bar */
 header nav > .section:not(:has(ul)):last-of-type {
   display: flex;
   align-items: center;
@@ -208,6 +224,7 @@ header nav > .section:not(:has(ul)):last-of-type .default-content-wrapper {
   margin: 0;
 }
 
+/* Only show first paragraph (search) in collapsed state */
 header nav > .section:not(:has(ul)):last-of-type p {
   margin: 0;
   padding: 10px 16px 10px 40px;
@@ -216,6 +233,10 @@ header nav > .section:not(:has(ul)):last-of-type p {
   font-size: 14px;
   color: rgb(255 255 255 / 70%);
   position: relative;
+}
+
+header nav > .section:not(:has(ul)):last-of-type p:not(:first-child) {
+  display: none;
 }
 
 header nav > .section:not(:has(ul)):last-of-type p::before {
@@ -241,20 +262,191 @@ header nav > .section:not(:has(ul)):last-of-type p::after {
   transform: rotate(-45deg);
 }
 
-/* Show nav links only when expanded */
+/* NAV LINKS SECTION: hidden when collapsed */
+header nav > .section:has(ul) {
+  display: none;
+}
+
+/* === EXPANDED STATE: Full-screen flyout menu === */
+
+/* Keep brand visible at top when expanded */
+header nav[aria-expanded='true'] > .section:not(:has(ul)):first-of-type {
+  width: auto;
+  margin-bottom: 0;
+}
+
+/* Show nav links when expanded */
 header nav[aria-expanded='true'] > .section:has(ul) {
   display: block;
   width: 100%;
   order: 10;
+  margin-top: 32px;
 }
 
-header nav[aria-expanded='true'] > .section:has(ul) ul {
+header nav[aria-expanded='true'] > .section:has(ul) .default-content-wrapper {
+  margin: 0;
+}
+
+header nav[aria-expanded='true'] > .section:has(ul) > .default-content-wrapper > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header nav[aria-expanded='true'] > .section:has(ul) > .default-content-wrapper > ul > li {
+  padding: 12px 0;
+}
+
+/* Large nav item text */
+header nav[aria-expanded='true'] > .section:has(ul) > .default-content-wrapper > ul > li > p {
+  font-size: 32px;
+  font-weight: 300;
+  font-family: var(--body-font-family);
+  color: rgb(255 255 255 / 60%);
+  text-decoration: none;
+  line-height: 1.3;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  margin: 0;
+}
+
+header nav[aria-expanded='true'] > .section:has(ul) > .default-content-wrapper > ul > li > p::after {
+  content: '\203A';
+  font-size: 32px;
+}
+
+/* Active/first item is white */
+header nav[aria-expanded='true'] > .section:has(ul) > .default-content-wrapper > ul > li:first-child > p {
+  color: #fff;
+}
+
+/* Sub-navigation links */
+header nav[aria-expanded='true'] > .section:has(ul) > .default-content-wrapper > ul > li > ul {
+  list-style: none;
+  padding: 8px 0 0;
+  margin: 0;
+  columns: 3;
+  column-gap: 48px;
+}
+
+header nav[aria-expanded='true'] > .section:has(ul) > .default-content-wrapper > ul > li > ul > li {
+  padding: 5px 0;
+  break-inside: avoid;
+}
+
+header nav[aria-expanded='true'] > .section:has(ul) > .default-content-wrapper > ul > li > ul > li a {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(255 255 255 / 80%);
+}
+
+header nav[aria-expanded='true'] > .section:has(ul) > .default-content-wrapper > ul > li > ul > li a:hover {
+  color: #fff;
+}
+
+/* Search/tools section in expanded state: stays at top in header bar position */
+header nav[aria-expanded='true'] > .section:not(:has(ul)):last-of-type {
+  order: 2;
+  flex: 1;
+  width: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Extra links (Current students, Alumni, UK/Malaysia/China) shown at bottom */
+header nav[aria-expanded='true'] > .section:not(:has(ul)):last-of-type .default-content-wrapper {
+  display: contents;
+}
+
+header nav[aria-expanded='true'] > .section:not(:has(ul)):last-of-type p:not(:first-child) {
+  display: block;
+  position: fixed;
+  bottom: 60px;
+  left: 24px;
+  background: none;
+  padding: 6px 0;
+  border-radius: 0;
+  font-size: 14px;
+  color: rgb(255 255 255 / 80%);
+}
+
+header nav[aria-expanded='true'] > .section:not(:has(ul)):last-of-type p:nth-child(3) {
+  bottom: 36px;
+}
+
+header nav[aria-expanded='true'] > .section:not(:has(ul)):last-of-type p:nth-child(4) {
+  bottom: 12px;
+}
+
+header nav[aria-expanded='true'] > .section:not(:has(ul)):last-of-type p:not(:first-child)::before,
+header nav[aria-expanded='true'] > .section:not(:has(ul)):last-of-type p:not(:first-child)::after {
+  display: none;
+}
+
+header nav[aria-expanded='true'] > .section:not(:has(ul)):last-of-type p:not(:first-child) a {
+  color: rgb(255 255 255 / 80%);
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+/* Use the nav-sections element (which JS creates) to hold bottom links when expanded */
+header nav[aria-expanded='true'] .nav-sections {
+  display: block;
+  visibility: visible;
+  width: 100%;
+  order: 30;
+  margin-top: auto;
+  padding-top: 32px;
+}
+
+header nav[aria-expanded='true'] .nav-sections .default-content-wrapper {
+  margin: 0;
+}
+
+header nav[aria-expanded='true'] .nav-sections .default-content-wrapper ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-header nav[aria-expanded='true'] > .section:has(ul) li {
-  padding: 12px 0;
-  border-bottom: 1px solid rgb(255 255 255 / 15%);
+header nav[aria-expanded='true'] .nav-sections .default-content-wrapper ul li {
+  display: inline;
+  padding-right: 16px;
+}
+
+header nav[aria-expanded='true'] .nav-sections .default-content-wrapper ul li a {
+  font-size: 14px;
+  color: rgb(255 255 255 / 80%);
+  text-decoration: underline;
+}
+
+@media (width >= 900px) {
+  header nav[aria-expanded='true'] > .section:has(ul) > .default-content-wrapper > ul {
+    flex-direction: column;
+    max-width: 280px;
+    border-right: 1px solid rgb(255 255 255 / 15%);
+    padding-right: 32px;
+  }
+
+  header nav[aria-expanded='true'] > .section:has(ul) > .default-content-wrapper > ul > li {
+    position: relative;
+  }
+
+  header nav[aria-expanded='true'] > .section:has(ul) > .default-content-wrapper > ul > li > ul {
+    position: absolute;
+    left: 320px;
+    top: 0;
+    columns: 3;
+    column-gap: 48px;
+    width: 700px;
+  }
+
+  header nav[aria-expanded='true'] > .section:has(ul) > .default-content-wrapper > ul > li > p {
+    font-size: 40px;
+  }
 }
