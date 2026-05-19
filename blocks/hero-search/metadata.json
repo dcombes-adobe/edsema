@@ -1,0 +1,39 @@
+{
+  "variantName": "hero-search",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-05-19T10:15:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nottingham.ac.uk/",
+    "originPage": "University of Nottingham homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "search-form",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "heading + search input + select + button",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "course finder search sections",
+      "search-driven entry points",
+      "filter/search hero areas without images"
+    ],
+    "notSuitableFor": [
+      "hero sections with background images",
+      "text-only heroes",
+      "multi-CTA heroes"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-19T10:15:00.000Z"
+  }
+}

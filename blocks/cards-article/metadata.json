@@ -24,8 +24,8 @@
     "notSuitableFor": ["image-only galleries", "product cards", "team member cards"]
   },
   "usage": {
-    "pagesUsing": ["content/index"],
-    "reuseCount": 1,
-    "lastUsed": "2026-03-24T14:27:00.000Z"
+    "pagesUsing": ["content/index", "/index"],
+    "reuseCount": 2,
+    "lastUsed": "2026-05-19T10:15:00.000Z"
   }
 }

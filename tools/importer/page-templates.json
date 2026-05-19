@@ -1,4 +1,7 @@
 {
+  "metadata": {
+    "projectType": "doc"
+  },
   "templates": [
     {
       "name": "homepage",
@@ -124,6 +127,160 @@
           "style": "dark",
           "blocks": [
             "hero-banner"
+          ],
+          "defaultContent": []
+        }
+      ]
+    },
+    {
+      "name": "nottingham-homepage",
+      "urls": [
+        "https://www.nottingham.ac.uk/"
+      ],
+      "description": "University of Nottingham main homepage with hero, search, course finder, news, events, and campus highlights",
+      "blocks": [
+        {
+          "name": "hero-banner",
+          "instances": [
+            ".homepage-hero-banner"
+          ]
+        },
+        {
+          "name": "hero-search",
+          "instances": [
+            ".search-section"
+          ]
+        },
+        {
+          "name": "cards-campaign",
+          "instances": [
+            ".homepage-campaign-tiles"
+          ]
+        },
+        {
+          "name": "cards-stats",
+          "instances": [
+            ".homepage-rankings"
+          ]
+        },
+        {
+          "name": "columns-feature",
+          "instances": [
+            ".homepage-image-cta-block"
+          ]
+        },
+        {
+          "name": "cards-image-cta",
+          "instances": [
+            ".homepage-image-cta-row"
+          ]
+        },
+        {
+          "name": "carousel-news",
+          "instances": [
+            ".news-carousel"
+          ]
+        },
+        {
+          "name": "cards-article",
+          "instances": [
+            ".events-section .row.g-4"
+          ]
+        },
+        {
+          "name": "columns-logos",
+          "instances": [
+            ".homepage-partnerships"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero Banner",
+          "selector": ".homepage-hero-banner",
+          "style": null,
+          "blocks": [
+            "hero-banner"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Course Finder",
+          "selector": ".search-section",
+          "style": null,
+          "blocks": [
+            "hero-search"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "Campaign Tiles",
+          "selector": ".homepage-campaign-tiles",
+          "style": null,
+          "blocks": [
+            "cards-campaign"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Rankings",
+          "selector": ".homepage-rankings",
+          "style": "dark",
+          "blocks": [
+            "cards-stats"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-5",
+          "name": "Research",
+          "selector": ".homepage-bg-container",
+          "style": "grey",
+          "blocks": [
+            "columns-feature",
+            "cards-image-cta"
+          ],
+          "defaultContent": [
+            ".homepage-bg-container > .container > h2"
+          ]
+        },
+        {
+          "id": "section-6",
+          "name": "University News",
+          "selector": ".news-events",
+          "style": null,
+          "blocks": [
+            "carousel-news"
+          ],
+          "defaultContent": [
+            ".news-events-title",
+            ".news-events-all-link"
+          ]
+        },
+        {
+          "id": "section-7",
+          "name": "Featured Events",
+          "selector": ".events-section",
+          "style": null,
+          "blocks": [
+            "cards-article"
+          ],
+          "defaultContent": [
+            ".news-events-title",
+            ".news-events-all-link"
+          ]
+        },
+        {
+          "id": "section-8",
+          "name": "Partner Logos",
+          "selector": ".homepage-partnerships",
+          "style": null,
+          "blocks": [
+            "columns-logos"
           ],
           "defaultContent": []
         }

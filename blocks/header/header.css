@@ -1,55 +1,39 @@
-/* header and nav layout */
+/* stylelint-disable no-descending-specificity */
+
+/* header - Nottingham dark navy bar with logo, search, and menu button */
+header {
+  overflow: hidden;
+}
+
 header .nav-wrapper {
-  background-color: var(--background-color);
+  background-color: var(--dark-color);
   width: 100%;
   z-index: 100;
   position: sticky;
   top: 0;
-  border-bottom: 1px solid var(--border-color);
 }
 
 header nav {
   box-sizing: border-box;
-  display: grid;
-  grid-template:
-    'hamburger brand tools' var(--nav-height)
-    'sections sections sections' 1fr / auto 1fr auto;
+  display: flex;
   align-items: center;
-  gap: 0 24px;
+  gap: 16px;
   margin: auto;
-  max-width: 1248px;
+  max-width: 1200px;
   height: var(--nav-height);
   padding: 0 24px;
   font-family: var(--body-font-family);
+  color: #fff;
+  overflow: hidden;
 }
 
 header nav[aria-expanded='true'] {
-  grid-template:
-    'hamburger brand' var(--nav-height)
-    'sections sections' 1fr
-    'tools tools' var(--nav-height) / auto 1fr;
-  overflow-y: auto;
+  flex-wrap: wrap;
+  height: auto;
   min-height: 100dvh;
-}
-
-@media (width >= 900px) {
-  header .nav-wrapper {
-    position: sticky;
-  }
-
-  header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0 32px;
-    max-width: 1200px;
-    padding: 0 24px;
-  }
-
-  header nav[aria-expanded='true'] {
-    min-height: 0;
-    overflow: visible;
-  }
+  align-content: flex-start;
+  background-color: var(--dark-color);
+  overflow: visible;
 }
 
 header nav p {
@@ -58,44 +42,59 @@ header nav p {
 }
 
 header nav a:any-link {
-  color: currentcolor;
+  color: #fff;
+  text-decoration: none;
 }
 
-/* hamburger */
+header nav a:hover {
+  opacity: 0.8;
+}
+
+/* hamburger - styled as Menu pill button, always visible on right */
 header nav .nav-hamburger {
-  grid-area: hamburger;
-  height: 22px;
+  order: 3;
+  flex: 0 0 auto;
   display: flex;
-  align-items: center;
+  visibility: visible;
 }
 
 header nav .nav-hamburger button {
-  height: 22px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: auto;
   margin: 0;
-  border: 0;
-  border-radius: 0;
-  padding: 0;
-  background-color: var(--background-color);
-  color: inherit;
-  overflow: initial;
-  text-overflow: initial;
-  white-space: initial;
+  border: 1px solid rgb(255 255 255 / 60%);
+  border-radius: 9999px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fff;
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
+header nav .nav-hamburger button:hover {
+  border-color: #fff;
+}
+
+/* Hamburger icon lines */
 header nav .nav-hamburger-icon,
 header nav .nav-hamburger-icon::before,
 header nav .nav-hamburger-icon::after {
   box-sizing: border-box;
   display: block;
   position: relative;
-  width: 20px;
+  width: 18px;
 }
 
 header nav .nav-hamburger-icon::before,
 header nav .nav-hamburger-icon::after {
   content: '';
   position: absolute;
-  background: currentcolor;
+  background: #fff;
 }
 
 header nav[aria-expanded='false'] .nav-hamburger-icon,
@@ -103,19 +102,19 @@ header nav[aria-expanded='false'] .nav-hamburger-icon::before,
 header nav[aria-expanded='false'] .nav-hamburger-icon::after {
   height: 2px;
   border-radius: 2px;
-  background: currentcolor;
+  background: #fff;
 }
 
 header nav[aria-expanded='false'] .nav-hamburger-icon::before {
-  top: -6px;
+  top: -5px;
 }
 
 header nav[aria-expanded='false'] .nav-hamburger-icon::after {
-  top: 6px;
+  top: 5px;
 }
 
 header nav[aria-expanded='true'] .nav-hamburger-icon {
-  height: 22px;
+  height: 18px;
 }
 
 header nav[aria-expanded='true'] .nav-hamburger-icon::before,
@@ -124,7 +123,7 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
   left: 1px;
   transform: rotate(45deg);
   transform-origin: 2px 1px;
-  width: 24px;
+  width: 20px;
   height: 2px;
   border-radius: 2px;
 }
@@ -135,185 +134,127 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
   transform: rotate(-45deg);
 }
 
-@media (width >= 900px) {
-  header nav .nav-hamburger {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-/* brand */
+/* brand - logo + university name (assigned by JS but targets wrong element) */
 header .nav-brand {
-  grid-area: brand;
-  flex-basis: 200px;
-  font-size: var(--body-font-size-s);
-  font-weight: 700;
-  line-height: 1;
+  display: none;
 }
 
-header nav .nav-brand a {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  font-family: var(--heading-font-family);
-  font-weight: 700;
-  font-size: var(--body-font-size-s);
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-header .nav-brand .icon {
-  width: 32px;
-  height: 32px;
-  flex-shrink: 0;
-}
-
-header nav .nav-brand img {
-  width: 32px;
-  height: 32px;
-}
-
-/* sections */
+/* sections - nav links hidden */
 header nav .nav-sections {
-  grid-area: sections;
-  flex: 1 1 auto;
   display: none;
   visibility: hidden;
 }
 
-header nav[aria-expanded='true'] .nav-sections {
-  display: block;
-  visibility: visible;
-  align-self: start;
-}
-
-header nav .nav-sections ul {
-  list-style: none;
-  padding-left: 0;
-  font-size: var(--body-font-size-s);
-}
-
-header nav .nav-sections ul > li {
-  font-weight: 500;
-}
-
-header nav .nav-sections ul > li > ul {
-  margin-top: 0;
-}
-
-header nav .nav-sections ul > li > ul > li {
-  font-weight: 400;
-}
-
-@media (width >= 900px) {
-  header nav .nav-sections {
-    display: block;
-    visibility: visible;
-    white-space: nowrap;
-  }
-
-  header nav[aria-expanded='true'] .nav-sections {
-    align-self: unset;
-  }
-
-  header nav .nav-sections .nav-drop {
-    position: relative;
-    padding-right: 16px;
-    cursor: pointer;
-  }
-
-  header nav .nav-sections .nav-drop::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 0.5em;
-    right: 2px;
-    transform: rotate(135deg);
-    width: 6px;
-    height: 6px;
-    border: 2px solid currentcolor;
-    border-radius: 0 1px 0 0;
-    border-width: 2px 2px 0 0;
-  }
-
-  header nav .nav-sections .nav-drop[aria-expanded='true']::after {
-    top: unset;
-    bottom: 0.5em;
-    transform: rotate(315deg);
-  }
-
-  header nav .nav-sections ul {
-    display: flex;
-    gap: 8px;
-    margin: 0;
-    align-items: center;
-  }
-
-  header nav .nav-sections .default-content-wrapper > ul > li {
-    flex: 0 1 auto;
-    position: relative;
-    padding: 8px 12px;
-  }
-
-  header nav .nav-sections .default-content-wrapper > ul > li > ul {
-    display: none;
-    position: relative;
-  }
-
-  header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul {
-    display: block;
-    position: absolute;
-    left: -24px;
-    width: 200px;
-    top: 150%;
-    padding: 16px;
-    background-color: var(--light-color);
-    white-space: initial;
-  }
-
-  header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
-    content: '';
-    position: absolute;
-    top: -8px;
-    left: 16px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--light-color);
-  }
-
-  header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
-    padding: 8px 0;
-  }
-}
-
-/* tools - Subscribe button */
 header nav .nav-tools {
-  grid-area: tools;
+  display: none;
 }
 
-header nav .nav-tools a {
-  display: inline-flex;
+/* Hide ALL .section divs inside nav by default */
+header nav > .section {
+  display: none;
+}
+
+/* Brand section: first .section (no ul) - show it */
+header nav > .section:not(:has(ul)) {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+/* The section with a ul is the nav links - keep hidden */
+header nav > .section:has(ul) {
+  display: none;
+}
+
+/* Brand styling */
+header nav > .section:not(:has(ul)):first-of-type .default-content-wrapper {
+  margin: 0;
+}
+
+header nav > .section:not(:has(ul)):first-of-type a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--body-font-family);
+  font-weight: 700;
+  font-size: 16px;
+  white-space: nowrap;
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav > .section:not(:has(ul)):first-of-type a::before {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* Search section: last .section without a ul */
+header nav > .section:not(:has(ul)):last-of-type {
+  display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--dark-color);
-  color: var(--background-color);
-  border: 2px solid var(--dark-color);
-  border-radius: 9999px;
-  padding: 12px 24px;
-  font-family: var(--body-font-family);
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.25;
-  text-decoration: none;
-  white-space: nowrap;
-  cursor: pointer;
+  flex: 1;
+  order: 2;
 }
 
-header nav .nav-tools a:hover {
-  background-color: #333;
-  border-color: #333;
-  text-decoration: none;
+header nav > .section:not(:has(ul)):last-of-type .default-content-wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 0;
+}
+
+header nav > .section:not(:has(ul)):last-of-type p {
+  margin: 0;
+  padding: 10px 16px 10px 40px;
+  background-color: rgb(255 255 255 / 15%);
+  border-radius: 9999px;
+  font-size: 14px;
+  color: rgb(255 255 255 / 70%);
+  position: relative;
+}
+
+header nav > .section:not(:has(ul)):last-of-type p::before {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgb(255 255 255 / 70%);
+  border-radius: 50%;
+}
+
+header nav > .section:not(:has(ul)):last-of-type p::after {
+  content: '';
+  position: absolute;
+  left: 27px;
+  top: 58%;
+  width: 2px;
+  height: 6px;
+  background: rgb(255 255 255 / 70%);
+  transform: rotate(-45deg);
+}
+
+/* Show nav links only when expanded */
+header nav[aria-expanded='true'] > .section:has(ul) {
+  display: block;
+  width: 100%;
+  order: 10;
+}
+
+header nav[aria-expanded='true'] > .section:has(ul) ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav[aria-expanded='true'] > .section:has(ul) li {
+  padding: 12px 0;
+  border-bottom: 1px solid rgb(255 255 255 / 15%);
 }

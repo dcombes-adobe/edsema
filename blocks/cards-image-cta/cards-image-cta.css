@@ -1,0 +1,112 @@
+/* Block: cards-image-cta
+ * Three image cards with white pill-shaped CTA overlays at the bottom.
+ * Extracted from source: .homepage-image-cta-row on nottingham.ac.uk
+ */
+
+.cards-image-cta > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.cards-image-cta > ul > li {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.cards-image-cta .cards-image-cta-card-image {
+  line-height: 0;
+}
+
+.cards-image-cta .cards-image-cta-card-image picture {
+  display: block;
+}
+
+.cards-image-cta > ul > li img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.cards-image-cta > ul > li:hover img {
+  transform: scale(1.03);
+}
+
+/* CTA stripe - white pill-shaped button overlay at bottom of card */
+.cards-image-cta .cards-image-cta-card-body {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.cards-image-cta .cards-image-cta-card-body p {
+  margin: 0;
+}
+
+/* Reset EDS button styles and apply source pill CTA */
+main .cards-image-cta .cards-image-cta-card-body a.button:any-link,
+.cards-image-cta .cards-image-cta-card-body a:any-link {
+  display: block;
+  position: relative;
+  padding: 10px 60px 10px 14px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  border: none;
+  border-radius: 68px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+main .cards-image-cta .cards-image-cta-card-body a.button:hover,
+.cards-image-cta .cards-image-cta-card-body a:hover {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+/* Right chevron arrow via ::after pseudo-element */
+main .cards-image-cta .cards-image-cta-card-body a.button::after,
+.cards-image-cta .cards-image-cta-card-body a::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--text-color);
+  border-top: 2px solid var(--text-color);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+/* Reset .button-container wrapper EDS adds */
+.cards-image-cta .cards-image-cta-card-body .button-container {
+  display: block;
+  margin: 0;
+}
+
+@media (width >= 600px) {
+  .cards-image-cta > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .cards-image-cta > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

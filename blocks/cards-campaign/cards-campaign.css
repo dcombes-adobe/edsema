@@ -1,0 +1,73 @@
+/* Block: cards-campaign
+   Dark navy campaign tiles with white text, side-by-side on desktop */
+
+.cards-campaign > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.cards-campaign > ul > li {
+  background-color: var(--dark-color);
+  border: 1px solid var(--border-color);
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.cards-campaign > ul > li:hover {
+  box-shadow: 0 6px 20px rgb(0 0 0 / 20%);
+  transform: translateY(-3px);
+}
+
+.cards-campaign .cards-campaign-card-body {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cards-campaign h2 {
+  font-size: var(--heading-font-size-xl);
+  font-weight: 700;
+  font-family: var(--heading-font-family);
+  line-height: 1.1;
+  color: #fff;
+  margin: 0 0 15px;
+}
+
+.cards-campaign p {
+  font-size: var(--body-font-size-m);
+  font-family: var(--body-font-family);
+  line-height: 1.5;
+  color: #fff;
+  margin: 0 0 16px;
+}
+
+.cards-campaign .cards-campaign-card-body > p:last-child {
+  margin-top: auto;
+}
+
+.cards-campaign a:any-link {
+  color: #fff;
+  font-size: var(--body-font-size-m);
+  font-weight: 500;
+  text-decoration: underline;
+  padding: 5px 0 0;
+  display: inline-block;
+}
+
+.cards-campaign a:hover {
+  color: #fff;
+  opacity: 0.8;
+}
+
+@media (width >= 900px) {
+  .cards-campaign > ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-feature",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-05-19T10:15:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nottingham.ac.uk/",
+    "originPage": "University of Nottingham homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "content-feature",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + paragraph + CTA + image",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "feature content with text and large image side-by-side",
+      "research or program highlights",
+      "promotional two-column layouts with CTA"
+    ],
+    "notSuitableFor": [
+      "FAQ layouts",
+      "article metadata displays",
+      "image-only columns"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-19T10:15:00.000Z"
+  }
+}

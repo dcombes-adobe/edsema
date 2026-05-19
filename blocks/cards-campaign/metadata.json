@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-campaign",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-05-19T10:15:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nottingham.ac.uk/",
+    "originPage": "University of Nottingham homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "campaign-promo",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "heading + paragraph + link",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "promotional campaign tiles",
+      "call-to-action card pairs",
+      "event/program promotion cards without images"
+    ],
+    "notSuitableFor": [
+      "cards with images",
+      "article listings",
+      "gallery displays"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-19T10:15:00.000Z"
+  }
+}

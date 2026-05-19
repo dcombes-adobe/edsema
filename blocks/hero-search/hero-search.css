@@ -1,0 +1,145 @@
+/* stylelint-disable no-descending-specificity */
+
+/* hero-search block
+ * Source: .search-section on nottingham.ac.uk
+ * Course finder with heading, search input, dropdown, and CTA button in a row
+ */
+
+.hero-search-wrapper {
+  background-color: var(--background-color);
+  box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+  position: relative;
+  z-index: 1;
+}
+
+.hero-search {
+  padding: 40px 24px;
+}
+
+.hero-search > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Row 1: Heading */
+.hero-search > div > div:first-child {
+  padding: 0;
+}
+
+.hero-search h2 {
+  font-family: var(--heading-font-family);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-color);
+  line-height: 1.2;
+  margin: 0;
+  text-align: left;
+}
+
+/* Row 2: Search form row */
+.hero-search > div > div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: stretch;
+}
+
+/* Search input placeholder */
+.hero-search > div > div:last-child p:first-child {
+  flex: 2;
+  margin: 0;
+  padding: 12px 0;
+  border: none;
+  border-bottom: 2px solid var(--dark-color);
+  font-size: 16px;
+  color: var(--text-secondary-color);
+  font-family: var(--body-font-family);
+  cursor: text;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.hero-search > div > div:last-child p:first-child:hover {
+  border-bottom-color: #0d6efd;
+  color: var(--text-color);
+}
+
+/* Select dropdown placeholder */
+.hero-search > div > div:last-child p:nth-child(2) {
+  flex: 1.5;
+  margin: 0;
+  padding: 12px 0;
+  border: none;
+  border-bottom: 2px solid var(--dark-color);
+  font-size: 16px;
+  color: var(--text-secondary-color);
+  font-family: var(--body-font-family);
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.hero-search > div > div:last-child p:nth-child(2):hover {
+  border-bottom-color: #0d6efd;
+  color: var(--text-color);
+}
+
+.hero-search > div > div:last-child p:nth-child(2)::after {
+  content: '\25BC';
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: var(--text-secondary-color);
+}
+
+/* Let's go button */
+.hero-search > div > div:last-child p:last-child {
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+main .hero-search > div > div:last-child p:last-child a:any-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background-color: var(--dark-color);
+  color: #fff;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 68px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--body-font-family);
+  text-decoration: none;
+  min-width: 140px;
+  transition: background-color 0.2s;
+}
+
+main .hero-search > div > div:last-child p:last-child a:hover {
+  background-color: #1a3a5c;
+  color: #fff;
+}
+
+main .hero-search > div > div:last-child p:last-child a::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #fff;
+  border-top: 2px solid #fff;
+  transform: rotate(45deg);
+}
+
+@media (width >= 900px) {
+  .hero-search {
+    padding: 48px 40px;
+  }
+
+  .hero-search > div > div:last-child {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 24px;
+  }
+}

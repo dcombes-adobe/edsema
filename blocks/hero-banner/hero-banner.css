@@ -1,27 +1,48 @@
-/* Full-width dark section with padding */
-.hero-banner-container {
-  background-color: var(--dark-color);
+/* Block: hero-banner -- Full-width dark hero with background image and gradient overlay */
+
+/* Full-width wrapper override */
+.hero-banner-wrapper {
+  max-width: 100% !important;
+  padding: 0 !important;
 }
 
 .hero-banner {
   position: relative;
-  border-radius: var(--border-radius);
   overflow: hidden;
-  min-height: 560px;
+  min-height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background-color: var(--dark-color);
 }
 
-/* Background image (first row) */
+/* Background image row (first row) - absolute positioned */
 .hero-banner > div:first-child {
   position: absolute;
   inset: 0;
   z-index: 0;
 }
 
-.hero-banner > div:first-child p {
-  margin: 0;
+/* Text content row (second row) */
+.hero-banner > div:last-child {
+  position: relative;
+  z-index: 2;
+  padding: 40px 16px 60px;
+  color: #fff;
+}
+
+/* Background image inner cell */
+.hero-banner > div:first-child > div {
+  height: 100%;
+}
+
+/* Text content inner cell */
+.hero-banner > div:last-child > div {
+  max-width: 600px;
+}
+
+.hero-banner > div:first-child picture {
+  display: block;
   height: 100%;
 }
 
@@ -32,56 +53,102 @@
   display: block;
 }
 
-/* Dark overlay */
+/* Gradient overlay - left-to-right dark fade */
 .hero-banner > div:first-child::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgb(0 0 0 / 80%) 0%, rgb(0 0 0 / 40%) 50%, rgb(0 0 0 / 20%) 100%);
+  background: linear-gradient(to left, rgb(0 0 0 / 0%) 40%, rgb(0 0 0) 95%);
+  z-index: 1;
 }
 
-/* Text content (second row) */
-.hero-banner > div:last-child {
-  position: relative;
-  z-index: 2;
-  padding: 40px 24px;
+/* Heading */
+.hero-banner h1 {
+  font-size: 34px;
+  font-weight: 700;
+  font-family: var(--heading-font-family);
+  line-height: 1.2;
   color: #fff;
+  margin: 0 0 8px;
 }
 
-.hero-banner h2 {
+/* Paragraph text */
+.hero-banner p {
+  font-size: 16px;
+  font-family: var(--body-font-family);
+  line-height: 1.5;
   color: #fff;
-  margin-top: 0;
-  margin-bottom: 16px;
-  font-size: var(--heading-font-size-xxl);
+  margin: 20px 0 0;
 }
 
-.hero-banner > div:last-child > div:nth-child(2) {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #fff;
-  margin-bottom: 24px;
-  max-width: 600px;
-}
-
+/* CTA button - white pill style */
 .hero-banner p.button-wrapper {
-  margin: 0;
+  margin: 24px 0 0;
 }
 
-.hero-banner a.button:any-link {
+main .hero-banner a.button:any-link {
+  display: inline-block;
+  position: relative;
   background-color: #fff;
-  color: #000;
+  color: var(--dark-color);
+  padding: 10px 60px 10px 14px;
+  border: 2px solid #fff;
+  border-radius: 68px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--body-font-family);
+  text-decoration: none;
+  line-height: 1.5;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* Arrow indicator on button */
+main .hero-banner a.button::after {
+  content: '';
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--dark-color);
+  border-bottom: 2px solid var(--dark-color);
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+main .hero-banner a.button:hover {
+  background-color: var(--dark-color);
+  color: #fff;
   border-color: #fff;
 }
 
-.hero-banner a.button:hover {
-  background-color: #f0f0f0;
-  border-color: #f0f0f0;
+main .hero-banner a.button:hover::after {
+  border-color: #fff;
 }
 
+/* Desktop styles */
 @media (width >= 900px) {
+  .hero-banner {
+    min-height: 500px;
+  }
+
+  .hero-banner h1 {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
   .hero-banner > div:last-child {
-    box-sizing: border-box;
-    padding: 64px;
-    max-width: 672px;
+    padding: 60px 12px 90px;
+    margin: 0 60px;
+  }
+
+  .hero-banner > div:last-child > div {
+    max-width: 720px;
+  }
+}
+
+@media (width >= 1200px) {
+  .hero-banner > div:last-child {
+    margin: 0 60px;
+    max-width: 1320px;
   }
 }

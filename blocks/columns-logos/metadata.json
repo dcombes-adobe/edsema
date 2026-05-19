@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-logos",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-05-19T10:15:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nottingham.ac.uk/",
+    "originPage": "University of Nottingham homepage",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "logo-bar",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "4 logo images side-by-side",
+    "buttonCount": 0,
+    "imageCount": 4
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "partner/accreditation logo rows",
+      "sponsor logo displays",
+      "membership badge displays"
+    ],
+    "notSuitableFor": [
+      "text content columns",
+      "image+text feature layouts",
+      "FAQ layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-19T10:15:00.000Z"
+  }
+}
