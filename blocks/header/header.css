@@ -203,14 +203,15 @@ header nav > div.section:nth-of-type(2) a {
   text-decoration: none;
 }
 
-header nav > div.section:nth-of-type(2) a::before {
-  content: '';
-  display: block;
+header nav > div.section:nth-of-type(2) .icon {
   width: 44px;
   height: 44px;
-  background-color: #fff;
-  border-radius: 8px;
   flex-shrink: 0;
+}
+
+header nav > div.section:nth-of-type(2) .icon img {
+  width: 44px;
+  height: 44px;
 }
 
 /* Search section: last div.section - show as search bar */
