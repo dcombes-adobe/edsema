@@ -1,7 +1,11 @@
 {
   "type": "doc",
-  "libraryUrl": "https://main--sta-boilerplate--aemdemos.aem.page/tools/sidekick/library.json",
   "contentHostUrl": "https://content.da.live/dcombes-adobe/edsema/",
   "previewOrg": "dcombes-adobe",
-  "previewSite": "edsema"
+  "previewSite": "edsema",
+  "sites": {
+    "edsema": {
+      "libraryUrl": "https://main--sta-boilerplate--aemdemos.aem.page/tools/sidekick/library.json"
+    }
+  }
 }

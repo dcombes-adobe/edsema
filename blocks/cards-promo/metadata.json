@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-promo",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-07-08T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://personal.nedbank.co.za/",
+    "originPage": "Nedbank Personal homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "purpose": "promotion-cards",
+    "imagePattern": "thumbnail"
+  },
+  "contentPattern": {
+    "structure": "image + title + description + CTA link",
+    "buttonCount": 1,
+    "imageCount": 1,
+    "itemCount": 3
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "promotional card grids with a top image, title, blurb and CTA",
+      "offer/campaign highlight tiles",
+      "cross-sell cards linking to detail pages"
+    ],
+    "notSuitableFor": [
+      "icon-only overview tiles (use cards-overview)",
+      "article listings with tag/date (use cards-article)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-07-08T00:00:00.000Z"
+  }
+}

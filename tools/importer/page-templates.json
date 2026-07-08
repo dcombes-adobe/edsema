@@ -285,6 +285,115 @@
           "defaultContent": []
         }
       ]
+    },
+    {
+      "name": "nedbank-homepage",
+      "urls": [
+        "https://personal.nedbank.co.za/"
+      ],
+      "representativeUrl": "https://personal.nedbank.co.za/",
+      "coverageGaps": [],
+      "description": "Nedbank Personal homepage (category-landing): hero video banner, overview icon-card grid, content block, promotions cards, switch CTA card, text block",
+      "blocks": [
+        {
+          "name": "hero-video-banner",
+          "instances": [
+            "#NBD_VIDEOBANNER_1"
+          ]
+        },
+        {
+          "name": "cards-overview",
+          "instances": [
+            "#NBD_OVERVIEWCARDS_1"
+          ]
+        },
+        {
+          "name": "columns-feature",
+          "instances": [
+            "#NBD_CONTENTBLOCK_1"
+          ]
+        },
+        {
+          "name": "cards-promo",
+          "instances": [
+            "#NBD_PROMOTIONCARDS_1"
+          ]
+        },
+        {
+          "name": "cards-help",
+          "instances": [
+            "#NBD_SWITCHCARD_1"
+          ],
+          "section": "green"
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero Video Banner",
+          "selector": "#NBD_VIDEOBANNER_1",
+          "style": "light-green",
+          "blocks": [
+            "hero-video-banner"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Overview Cards",
+          "selector": "#NBD_OVERVIEWCARDS_1",
+          "style": "light-green",
+          "blocks": [
+            "cards-overview"
+          ],
+          "defaultContent": [
+            "#NBD_OVERVIEWCARDS_1 h2"
+          ]
+        },
+        {
+          "id": "section-3",
+          "name": "Content Block",
+          "selector": "#NBD_CONTENTBLOCK_1",
+          "style": null,
+          "blocks": [
+            "columns-feature"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Promotion Cards",
+          "selector": "#NBD_PROMOTIONCARDS_1",
+          "style": null,
+          "blocks": [
+            "cards-promo"
+          ],
+          "defaultContent": [
+            "#NBD_PROMOTIONCARDS_1 .nbd-promoc-heading"
+          ]
+        },
+        {
+          "id": "section-5",
+          "name": "Switch Card",
+          "selector": "#NBD_SWITCHCARD_1",
+          "style": "green",
+          "blocks": [
+            "cards-help"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-6",
+          "name": "Text Block",
+          "selector": "#NBD_TEXT_1",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "#NBD_TEXT_1 h4",
+            "#NBD_TEXT_1 p"
+          ]
+        }
+      ]
     }
   ]
 }

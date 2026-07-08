@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-help",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-07-08T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://personal.nedbank.co.za/",
+    "originPage": "Nedbank Personal homepage",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "green",
+    "density": "moderate",
+    "purpose": "help-support-cards",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "icon + title + description + multiple arrow links; adjacent CTA promo panel",
+    "buttonCount": 1,
+    "imageCount": 1,
+    "itemCount": 2
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "help/support card sections on a colored (green) background",
+      "contact/ways-to-bank cards with icon + description + multiple links",
+      "support sections paired with a call-to-action panel"
+    ],
+    "notSuitableFor": [
+      "light-background promo cards (use cards-promo)",
+      "icon-only navigational tiles (use cards-overview)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-07-08T00:00:00.000Z"
+  }
+}

@@ -1,0 +1,164 @@
+/* hero-video-banner
+   Full-bleed banner: background photo + top-left heading/CTA overlay,
+   with a supporting text panel (subheading + paragraph) below.
+   Values extracted from #NBD_VIDEOBANNER_1 (personal.nedbank.co.za). */
+
+/* Full-width: neutralise the section wrapper max-width/padding */
+.hero-video-banner-wrapper {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.hero-video-banner {
+  position: relative;
+  padding: 0;
+  background-color: var(--light-green); /* #f2f9f5 */
+}
+
+/* Background image spans the top image band, object-fit cover */
+.hero-video-banner picture {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 0;
+  display: block;
+}
+
+.hero-video-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-video-banner > div {
+  position: relative;
+}
+
+.hero-video-banner > div > div {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* --- Top overlay zone: heading + CTA --- */
+.hero-video-banner .hero-video-banner-overlay {
+  padding: 40px 0;
+}
+
+.hero-video-banner h1 {
+  margin: 0 0 24px;
+  max-width: 600px;
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-xxl); /* 36px mobile / 64px desktop */
+  font-weight: 700;
+  line-height: 1.125;
+  color: var(--brand-green-dark);
+}
+
+.hero-video-banner .hero-video-banner-overlay p {
+  margin: 0;
+}
+
+/* Primary CTA: solid Nedbank green, fixed-width pill on desktop */
+.hero-video-banner .hero-video-banner-overlay a:any-link,
+.hero-video-banner a.button:any-link {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 15px 32px;
+  background-color: var(--brand-green); /* #008533 */
+  border: 2px solid var(--brand-green);
+  border-radius: 6px;
+  color: #fff;
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.hero-video-banner .hero-video-banner-overlay a:hover,
+.hero-video-banner a.button:hover {
+  background-color: var(--brand-green-dark); /* #006341 */
+  border-color: var(--brand-green-dark);
+  color: #fff;
+}
+
+/* --- Supporting text panel: subheading + paragraph --- */
+.hero-video-banner .hero-video-banner-panel {
+  background-color: #fafafa;
+  padding: 32px 24px;
+  box-shadow: rgb(23 37 46 / 20%) 0 60px 60px -60px;
+}
+
+.hero-video-banner .hero-video-banner-panel h3 {
+  margin: 0 0 16px;
+  padding: 0;
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-l); /* 24px mobile / 32px desktop */
+  font-weight: 700;
+  line-height: 1.25;
+  color: #17252e;
+}
+
+.hero-video-banner .hero-video-banner-panel p {
+  margin: 0 0 16px;
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--text-secondary-color); /* #494f50 */
+}
+
+.hero-video-banner .hero-video-banner-panel p:last-child {
+  margin-bottom: 0;
+}
+
+/* No background image supplied: heading in dark green for legibility */
+.hero-video-banner.no-image h1 {
+  color: var(--brand-green-dark);
+}
+
+@media (width >= 900px) {
+  .hero-video-banner > div > div {
+    padding: 0 32px;
+  }
+
+  .hero-video-banner .hero-video-banner-overlay {
+    max-width: 600px;
+    padding: 72px 0 96px;
+  }
+
+  .hero-video-banner h1 {
+    margin-bottom: 40px;
+    line-height: 1.125; /* ~72px at 64px */
+  }
+
+  /* Fixed-width CTA to match source (270px) */
+  .hero-video-banner .hero-video-banner-overlay a:any-link,
+  .hero-video-banner a.button:any-link {
+    width: 270px;
+    padding: 15px 0;
+  }
+
+  /* Text panel becomes an inset #fafafa card lifted over the image band */
+  .hero-video-banner .hero-video-banner-panel {
+    position: relative;
+    top: -48px;
+    margin-bottom: -48px;
+    padding: 64px 105px;
+  }
+
+  .hero-video-banner .hero-video-banner-panel h3 {
+    font-size: var(--heading-font-size-l); /* 32px desktop */
+    line-height: 1.25;
+  }
+
+  .hero-video-banner .hero-video-banner-panel p {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}

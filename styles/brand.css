@@ -1,19 +1,22 @@
 :root {
-  --heading-font-family: "Lora", "Georgia Bold", serif;
-  --body-font-family: "Circular", arial, sans-serif;
+  --heading-font-family: "Libre Franklin", sans-serif;
+  --body-font-family: "Open Sans", sans-serif;
   --background-color: #fff;
-  --text-color: #10263b;
-  --link-color: #0d6efd;
-  --link-hover-color: #0a58ca;
-  --light-color: #faf6ef;
-  --dark-color: #10263b;
+  --text-color: #212529;
+  --link-color: #008533;
+  --link-hover-color: #006341;
+  --brand-green: #008533;
+  --brand-green-dark: #006341;
+  --light-green: #f2f9f5;
+  --light-color: #f2f9f5;
+  --dark-color: #006341;
   --section-padding: 48px;
-  --content-max-width: 1140px;
-  --nav-height: 72px;
-  --heading-size-xxl: 34px;
-  --heading-size-xl: 28px;
-  --heading-size-l: 28px;
-  --heading-size-m: 20px;
-  --heading-size-s: 18px;
-  --heading-size-xs: 16px;
+  --content-max-width: 1200px;
+  --nav-height: 128px;
+  --heading-size-xxl: 64px;
+  --heading-size-xl: 40px;
+  --heading-size-l: 32px;
+  --heading-size-m: 24px;
+  --heading-size-s: 20px;
+  --heading-size-xs: 18px;
 }

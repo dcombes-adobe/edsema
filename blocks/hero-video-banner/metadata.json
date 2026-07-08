@@ -1,0 +1,38 @@
+{
+  "variantName": "hero-video-banner",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-07-08T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://personal.nedbank.co.za/",
+    "originPage": "Nedbank Personal homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "purpose": "landing-hero",
+    "imagePattern": "background"
+  },
+  "contentPattern": {
+    "structure": "background image + heading + CTA + subheading + paragraph",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product/category landing hero banners with a background photo",
+      "pages needing a single prominent CTA over an image",
+      "banners with a secondary supporting text panel"
+    ],
+    "notSuitableFor": [
+      "dark full-bleed CTA banners (use hero-banner)",
+      "image-grid landing heroes (use hero-landing)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-07-08T00:00:00.000Z"
+  }
+}

@@ -1,19 +1,15 @@
 {
   "status": "success",
-  "url": "https://www.nottingham.ac.uk/",
+  "url": "https://personal.nedbank.co.za/",
   "path": "index",
-  "timestamp": "2026-05-19T11:41:00.211Z",
-  "title": "University of Nottingham",
-  "template": "nottingham-homepage",
+  "timestamp": "2026-07-08T15:38:07.841Z",
+  "title": "Make better money choices with us | Nedbank",
+  "template": "nedbank-homepage",
   "blocks": [
-    "hero-banner",
-    "hero-search",
-    "cards-campaign",
-    "cards-stats",
+    "hero-video-banner",
+    "cards-overview",
     "columns-feature",
-    "cards-image-cta",
-    "carousel-news",
-    "cards-article",
-    "columns-logos"
+    "cards-promo",
+    "cards-help"
   ]
 }

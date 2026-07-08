@@ -1,123 +1,121 @@
+/* stylelint-disable no-descending-specificity */
+
+/* Nedbank footer — 4 link columns + brand/legal bottom bar */
+
 footer {
-  background-color: var(--dark-color);
-  color: var(--background-color);
-  font-size: var(--body-font-size-s);
+  background-color: #fff;
+  color: #212529;
+  font-size: 14px;
+  border-top: 1px solid #e5edec;
 }
 
-footer .footer > div {
-  max-width: 1200px;
-  margin: auto;
-  padding: 64px 24px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
+footer .footer-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 48px 24px 24px;
 }
 
-footer .footer .section {
-  padding: 0;
-  margin: 0;
+/* ---------- Link columns ---------- */
+footer .footer-column {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(25% - 24px);
+  margin-right: 24px;
+  margin-bottom: 32px;
 }
 
-footer .footer .section > div {
-  max-width: none;
-  padding: 0;
-  margin: 0;
-}
-
-footer .footer .default-content-wrapper {
-  text-align: left;
-  margin-bottom: 0;
-}
-
-footer .footer p {
-  margin: 0 0 4px;
-  color: rgb(255 255 255 / 80%);
-}
-
-footer .footer a:any-link {
-  color: rgb(255 255 255 / 80%);
-  text-decoration: none;
-}
-
-footer .footer a:hover {
-  color: var(--background-color);
-}
-
-footer .footer h2 {
-  font-family: var(--body-font-family);
-  font-size: 16px;
+footer .footer-column h6 {
+  margin: 0 0 16px;
+  font-family: var(--heading-font-family, "Libre Franklin", sans-serif);
+  font-size: 18px;
   font-weight: 700;
-  text-transform: none;
-  color: #fff;
-  margin: 0 0 20px;
+  color: #17252e;
 }
 
-footer .footer ul {
+footer .footer-column ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-footer .footer ul li {
-  padding: 6px 0;
+footer .footer-column li {
+  margin-bottom: 12px;
 }
 
-footer .footer ul li a:any-link {
-  font-size: var(--body-font-size-s);
-  font-weight: 400;
+footer .footer-column a:any-link {
+  color: var(--brand-green, #008533);
+  text-decoration: none;
+  font-size: 14px;
 }
 
-/* Bottom bar: social icons + copyright (last section) */
-footer .footer .section:last-child {
-  border-top: 1px solid rgb(255 255 255 / 20%);
-  padding-top: 32px;
-  margin-top: 32px;
+footer .footer-column a:hover {
+  color: var(--brand-green-dark, #006341);
+  text-decoration: underline;
 }
 
-footer .footer .section:last-child .default-content-wrapper {
+/* ---------- Bottom brand / legal bar ---------- */
+footer .footer-bottom {
+  border-top: 1px solid #e5edec;
+  padding-top: 24px;
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 32px;
 }
 
-footer .footer .section:last-child p:first-child {
+footer .footer-bottom .footer-logo {
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+footer .footer-bottom .footer-logo img {
+  height: 32px;
+  width: auto;
+}
+
+footer .footer-bottom > p:not(.footer-logo) {
+  margin: 0;
+  flex: 1 1 300px;
+  font-size: 12px;
+  color: #494f50;
+}
+
+footer .footer-social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   gap: 16px;
   align-items: center;
+  flex: 0 0 auto;
+  margin-left: auto;
 }
 
-footer .footer .section:last-child p:first-child a {
-  font-size: 20px;
-  color: #fff;
+footer .footer-social img {
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
-footer .footer .section:last-child p:last-child {
-  font-size: 12px;
-  color: rgb(255 255 255 / 60%);
-}
-
-footer .footer .section:last-child p:last-child a {
-  color: rgb(255 255 255 / 60%);
-  font-size: 12px;
-}
-
-footer .footer .section:last-child p:last-child a:hover {
-  color: #fff;
-}
-
-@media (width >= 900px) {
-  footer .footer > div {
-    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
-    gap: 32px;
+/* ---------- Mobile ---------- */
+@media (width < 900px) {
+  footer .footer-content {
+    padding: 32px 16px 16px;
   }
 
-  footer .footer .section:last-child {
-    grid-column: 1 / -1;
+  footer .footer-column {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
   }
 
-  footer .footer .section:last-child .default-content-wrapper {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  footer .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer .footer-social {
+    margin-left: 0;
   }
 }

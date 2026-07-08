@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-overview",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-07-08T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://personal.nedbank.co.za/",
+    "originPage": "Nedbank Personal homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "purpose": "overview-icon-cards",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "icon + title + subtitle + arrow link",
+    "buttonCount": 1,
+    "imageCount": 1,
+    "itemCount": 6
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product/service overview grids with icon + short label",
+      "navigational card grids where the whole card is a link",
+      "'what we can do for you' style category tiles"
+    ],
+    "notSuitableFor": [
+      "cards with large photos (use cards-promo/cards-article)",
+      "statistics cards (use cards-stats)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-07-08T00:00:00.000Z"
+  }
+}

@@ -1,0 +1,622 @@
+{
+  "templates": [
+    {
+      "name": "category-landing",
+      "representativePages": [
+        "https://personal.nedbank.co.za/",
+        "https://personal.nedbank.co.za/nedbank-connect.html",
+        "https://personal.nedbank.co.za/borrow/vehicle-finance.html",
+        "https://personal.nedbank.co.za/learn/financial-health-guide.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/",
+        "https://personal.nedbank.co.za/borrow/vehicle-finance.html",
+        "https://personal.nedbank.co.za/home.html",
+        "https://personal.nedbank.co.za/learn/consumer-financial-education.html",
+        "https://personal.nedbank.co.za/learn/financial-health-guide.html",
+        "https://personal.nedbank.co.za/nedbank-connect.html",
+        "https://personal.nedbank.co.za/nedbank-connect/nedbank-connect-refer-a-friend.html"
+      ],
+      "description": "Top-level category landing: hero banner, feature/icon card grid, promo cards, help section"
+    },
+    {
+      "name": "product-listing-accounts",
+      "representativePages": [
+        "https://personal.nedbank.co.za/bank/bank-accounts/choose-the-right-account.html",
+        "https://personal.nedbank.co.za/contact/Enbi-chat.html",
+        "https://personal.nedbank.co.za/borrow/debt-assistance.html",
+        "https://personal.nedbank.co.za/bank/credit-cards.html",
+        "https://personal.nedbank.co.za/bank/greenbacks/how-to-guides.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/bank.html",
+        "https://personal.nedbank.co.za/bank/bank-accounts.html",
+        "https://personal.nedbank.co.za/bank/bank-accounts/choose-the-right-account.html",
+        "https://personal.nedbank.co.za/bank/bank-accounts/how-to-manage-your-account.html",
+        "https://personal.nedbank.co.za/bank/bank-accounts/switch-your-account.html",
+        "https://personal.nedbank.co.za/bank/credit-cards.html",
+        "https://personal.nedbank.co.za/bank/credit-cards/amex/gold.html",
+        "https://personal.nedbank.co.za/bank/credit-cards/amex/membership-rewards.html",
+        "https://personal.nedbank.co.za/bank/credit-cards/amex/platinum.html",
+        "https://personal.nedbank.co.za/bank/credit-cards/nedbank/gold.html",
+        "https://personal.nedbank.co.za/bank/credit-cards/nedbank/platinum.html",
+        "https://personal.nedbank.co.za/bank/credit-cards/saa-voyager/gold.html",
+        "https://personal.nedbank.co.za/bank/credit-cards/saa-voyager/premium.html",
+        "https://personal.nedbank.co.za/bank/credit-cards/see-all-cards.html",
+        "https://personal.nedbank.co.za/bank/digital-banking.html",
+        "https://personal.nedbank.co.za/bank/digital-banking/resume-on-app.html",
+        "https://personal.nedbank.co.za/bank/greenbacks/how-to-guides.html",
+        "https://personal.nedbank.co.za/bank/international-banking.html",
+        "https://personal.nedbank.co.za/bank/international-banking/forex-for-travel.html",
+        "https://personal.nedbank.co.za/bank/international-banking/forex-rates.html",
+        "https://personal.nedbank.co.za/bank/international-banking/payments.html",
+        "https://personal.nedbank.co.za/borrow.html",
+        "https://personal.nedbank.co.za/borrow/debt-assistance.html",
+        "https://personal.nedbank.co.za/borrow/home-loans.html",
+        "https://personal.nedbank.co.za/borrow/overdrafts.html",
+        "https://personal.nedbank.co.za/borrow/personal-loans.html",
+        "https://personal.nedbank.co.za/borrow/student-loans.html",
+        "https://personal.nedbank.co.za/contact/Enbi-chat.html",
+        "https://personal.nedbank.co.za/contact/contact-us.html",
+        "https://personal.nedbank.co.za/home/fraud-awareness/banking-safely.html",
+        "https://personal.nedbank.co.za/home/fraud-awareness/cybercrime.html",
+        "https://personal.nedbank.co.za/home/fraud-awareness/fraud-messages.html",
+        "https://personal.nedbank.co.za/home/fraud-awareness/schemes-and-scams.html",
+        "https://personal.nedbank.co.za/home/frequently-asked-questions-on-unclaimed-credit-balances.html",
+        "https://personal.nedbank.co.za/home/rates-and-fees.html",
+        "https://personal.nedbank.co.za/home/supplier-newsletter.html",
+        "https://personal.nedbank.co.za/learn/blog.html",
+        "https://personal.nedbank.co.za/learn/help-centre.html",
+        "https://personal.nedbank.co.za/nedbank-connect/frequently-asked-questions.html",
+        "https://personal.nedbank.co.za/promotions.html",
+        "https://personal.nedbank.co.za/promotions/upgraded-greenbacks.html",
+        "https://personal.nedbank.co.za/save-and-invest.html",
+        "https://personal.nedbank.co.za/save-and-invest/accounts.html",
+        "https://personal.nedbank.co.za/save-and-invest/accounts/32-days/32-day-notice.html",
+        "https://personal.nedbank.co.za/save-and-invest/accounts/on-demand/just-save.html",
+        "https://personal.nedbank.co.za/save-and-invest/investment-services.html"
+      ],
+      "description": "Product listing: hero, tabbed pricing-card grids by segment, learn-more blog carousel"
+    },
+    {
+      "name": "product-detail-everyday-banking",
+      "representativePages": [
+        "https://personal.nedbank.co.za/bank/bank-accounts/everyday-banking/migoals-plus.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/bank/bank-accounts/everyday-banking/migoals-plus.html",
+        "https://personal.nedbank.co.za/bank/bank-accounts/everyday-banking/migoals-premium.html",
+        "https://personal.nedbank.co.za/bank/bank-accounts/everyday-banking/migoals.html"
+      ],
+      "description": "Account product detail: hero, feature sections, pricing and CTA"
+    },
+    {
+      "name": "how-to-guide",
+      "representativePages": [
+        "https://personal.nedbank.co.za/bank/bank-accounts/how-to-guides/switch-your-debit-orders.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/bank/bank-accounts/how-to-guides/switch-your-debit-orders.html",
+        "https://personal.nedbank.co.za/bank/bank-accounts/how-to-guides/switch-your-salary.html"
+      ],
+      "description": "Step-by-step how-to guide with instructional sections"
+    },
+    {
+      "name": "product-detail-kids-account",
+      "representativePages": [
+        "https://personal.nedbank.co.za/bank/bank-accounts/kids-accounts/migoals4kids.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/bank/bank-accounts/kids-accounts/migoals4kids.html"
+      ],
+      "description": "Kids account product detail page"
+    },
+    {
+      "name": "product-detail-private-clients",
+      "representativePages": [
+        "https://personal.nedbank.co.za/bank/bank-accounts/private-clients/private-bundle-young.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/bank/bank-accounts/private-clients/private-bundle-young.html",
+        "https://personal.nedbank.co.za/bank/bank-accounts/private-clients/private-bundle.html",
+        "https://personal.nedbank.co.za/bank/bank-accounts/private-clients/private-clients-pay-as-you-use.html",
+        "https://personal.nedbank.co.za/bank/bank-accounts/private-clients/private-one-young.html",
+        "https://personal.nedbank.co.za/bank/bank-accounts/private-clients/private-one.html"
+      ],
+      "description": "Private clients account product detail page"
+    },
+    {
+      "name": "product-detail-private-wealth",
+      "representativePages": [
+        "https://personal.nedbank.co.za/bank/bank-accounts/private-wealth/private-wealth-bundle.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/bank/bank-accounts/private-wealth/private-wealth-bundle.html"
+      ],
+      "description": "Private wealth bundle product detail page"
+    },
+    {
+      "name": "product-detail-seniors-account",
+      "representativePages": [
+        "https://personal.nedbank.co.za/bank/bank-accounts/seniors-accounts/migoals-plus-seniors.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/bank/bank-accounts/seniors-accounts/migoals-plus-seniors.html",
+        "https://personal.nedbank.co.za/bank/bank-accounts/seniors-accounts/migoals-premium-seniors.html",
+        "https://personal.nedbank.co.za/bank/bank-accounts/seniors-accounts/migoals-seniors.html"
+      ],
+      "description": "Seniors account product detail page"
+    },
+    {
+      "name": "product-detail-youth-account",
+      "representativePages": [
+        "https://personal.nedbank.co.za/bank/bank-accounts/youth-banking/migoals-plus-youth.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/bank/bank-accounts/youth-banking/migoals-plus-youth.html",
+        "https://personal.nedbank.co.za/bank/bank-accounts/youth-banking/migoals-premium-youth.html",
+        "https://personal.nedbank.co.za/bank/bank-accounts/youth-banking/migoals-youth.html"
+      ],
+      "description": "Youth account product detail page"
+    },
+    {
+      "name": "feature-detail-digital-banking",
+      "representativePages": [
+        "https://personal.nedbank.co.za/bank/digital-banking/channels/cellphone-banking.html",
+        "https://personal.nedbank.co.za/borrow/solar-finance.html",
+        "https://personal.nedbank.co.za/bank/digital-banking/channels/money-app.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/bank/digital-banking/channels/cellphone-banking.html",
+        "https://personal.nedbank.co.za/bank/digital-banking/channels/money-app.html",
+        "https://personal.nedbank.co.za/bank/digital-banking/channels/online-banking.html",
+        "https://personal.nedbank.co.za/bank/digital-banking/nedbank-id.html",
+        "https://personal.nedbank.co.za/bank/digital-banking/needs/buy.html",
+        "https://personal.nedbank.co.za/bank/digital-banking/needs/manage.html",
+        "https://personal.nedbank.co.za/bank/digital-banking/needs/payments.html",
+        "https://personal.nedbank.co.za/borrow/solar-finance.html",
+        "https://personal.nedbank.co.za/legal/fatca-and-crs.html"
+      ],
+      "description": "Digital banking channel/feature detail page with feature sections"
+    },
+    {
+      "name": "faq",
+      "representativePages": [
+        "https://personal.nedbank.co.za/bank/greenbacks/faq.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/bank/greenbacks/faq.html"
+      ],
+      "description": "Frequently asked questions accordion page"
+    },
+    {
+      "name": "product-overview-greenbacks",
+      "representativePages": [
+        "https://personal.nedbank.co.za/bank/greenbacks.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/bank/greenbacks.html"
+      ],
+      "description": "Rewards programme overview landing page"
+    },
+    {
+      "name": "product-detail-international-banking",
+      "representativePages": [
+        "https://personal.nedbank.co.za/bank/international-banking/foreign-currency-account.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/bank/international-banking/foreign-currency-account.html"
+      ],
+      "description": "International banking product detail page"
+    },
+    {
+      "name": "branch-locator",
+      "representativePages": [
+        "https://personal.nedbank.co.za/contact/find-us.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/contact/find-us.html"
+      ],
+      "description": "Find-us branch/ATM locator page"
+    },
+    {
+      "name": "info-article-banking-practice",
+      "representativePages": [
+        "https://personal.nedbank.co.za/home/code-of-banking-practice.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/home/code-of-banking-practice.html",
+        "https://personal.nedbank.co.za/home/frequently-asked-questions-on-dormant-accounts.html",
+        "https://personal.nedbank.co.za/home/the-promotion-of-access-to-information-act.html"
+      ],
+      "description": "Informational text article: code of banking practice and similar"
+    },
+    {
+      "name": "info-article-compliance",
+      "representativePages": [
+        "https://personal.nedbank.co.za/home/fica.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/home/fica.html"
+      ],
+      "description": "Compliance informational article (FICA and similar)"
+    },
+    {
+      "name": "info-landing-fraud-awareness",
+      "representativePages": [
+        "https://personal.nedbank.co.za/home/fraud-awareness.html",
+        "https://personal.nedbank.co.za/save-and-invest/accounts/32-days/32-day-notice/ready-to-apply.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/home/fraud-awareness.html",
+        "https://personal.nedbank.co.za/save-and-invest/accounts/32-days/32-day-notice/ready-to-apply.html",
+        "https://personal.nedbank.co.za/save-and-invest/accounts/on-demand/just-save/ready-to-apply.html"
+      ],
+      "description": "Fraud awareness informational landing with topic cards"
+    },
+    {
+      "name": "legal-privacy-notice",
+      "representativePages": [
+        "https://personal.nedbank.co.za/home/nedbank-privacy-notice.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/home/nedbank-privacy-notice.html"
+      ],
+      "description": "Privacy notice legal document page"
+    },
+    {
+      "name": "product-detail-insurance",
+      "representativePages": [
+        "https://personal.nedbank.co.za/insure/business-cover.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/insure/business-cover.html",
+        "https://personal.nedbank.co.za/insure/codi-what-it-is-and-what-you-need-to-know.html",
+        "https://personal.nedbank.co.za/insure/credit-life.html",
+        "https://personal.nedbank.co.za/insure/funeral-cover.html",
+        "https://personal.nedbank.co.za/insure/how-to-claim.html",
+        "https://personal.nedbank.co.za/insure/life-cover.html",
+        "https://personal.nedbank.co.za/insure/short-term-insurance.html",
+        "https://personal.nedbank.co.za/insure/travel-insurance.html"
+      ],
+      "description": "Insurance product detail: hero CTA, feature checklist, split media, icon card grid, numbered process"
+    },
+    {
+      "name": "category-landing-insure",
+      "representativePages": [
+        "https://personal.nedbank.co.za/insure.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/insure.html"
+      ],
+      "description": "Insurance category landing page"
+    },
+    {
+      "name": "blog-article",
+      "representativePages": [
+        "https://personal.nedbank.co.za/learn/blog/5-reasons-not-to-withdraw-cash-from-a-credit-card.html",
+        "https://personal.nedbank.co.za/learn/blog/avoid-early-withdrawal-on-your-retirement-savings.html",
+        "https://personal.nedbank.co.za/learn/blog/benefits-of-tax-free-savings-and-investments.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/learn/blog/5-reasons-not-to-withdraw-cash-from-a-credit-card.html",
+        "https://personal.nedbank.co.za/learn/blog/ai-and-future-of-banking.html",
+        "https://personal.nedbank.co.za/learn/blog/atm-cash-withdrawals-on-phone.html",
+        "https://personal.nedbank.co.za/learn/blog/avoid-early-withdrawal-on-your-retirement-savings.html",
+        "https://personal.nedbank.co.za/learn/blog/bank-atm-cctv-footage.html",
+        "https://personal.nedbank.co.za/learn/blog/banking-reimagined-go-digital.html",
+        "https://personal.nedbank.co.za/learn/blog/benefits-of-tax-free-savings-and-investments.html",
+        "https://personal.nedbank.co.za/learn/blog/better-money-choices-saves-on-banking-fees.html",
+        "https://personal.nedbank.co.za/learn/blog/boost-your-emergency-savings-with-greenbacks.html",
+        "https://personal.nedbank.co.za/learn/blog/common-credit-card-scams.html",
+        "https://personal.nedbank.co.za/learn/blog/double-your-money-fast.html",
+        "https://personal.nedbank.co.za/learn/blog/evolution-of-payments-and-future-of-credit-cards.html",
+        "https://personal.nedbank.co.za/learn/blog/funding-your-bank-account-so-it-stays-active.html",
+        "https://personal.nedbank.co.za/learn/blog/getting-business-payments-on-whatsapp.html",
+        "https://personal.nedbank.co.za/learn/blog/greenbacks-levels.html",
+        "https://personal.nedbank.co.za/learn/blog/how-to-send-money-abroad.html",
+        "https://personal.nedbank.co.za/learn/blog/insurance-advice-from-experts.html",
+        "https://personal.nedbank.co.za/learn/blog/investing-for-your-kids-to-retire-as-millionaires.html",
+        "https://personal.nedbank.co.za/learn/blog/is-it-worth-having-income-protection.html",
+        "https://personal.nedbank.co.za/learn/blog/manage-your-credit-score-on-the-money-app.html",
+        "https://personal.nedbank.co.za/learn/blog/manage-your-money-and-assets-in-your-home-country.html",
+        "https://personal.nedbank.co.za/learn/blog/nedbank-migoals-understanding-account-change.html",
+        "https://personal.nedbank.co.za/learn/blog/offshore-investments-as-part-of-wealth-building-strategy.html",
+        "https://personal.nedbank.co.za/learn/blog/pay-your-bills-and-get-rewarded.html",
+        "https://personal.nedbank.co.za/learn/blog/payshap-new-payment-method-fast-as-cash.html",
+        "https://personal.nedbank.co.za/learn/blog/pick-the-perfect-bank-account.html",
+        "https://personal.nedbank.co.za/learn/blog/power-of-saving-through-stokvel-account.html",
+        "https://personal.nedbank.co.za/learn/blog/receiving-international-payments-on-money-app.html",
+        "https://personal.nedbank.co.za/learn/blog/reinvestment-for-growth.html",
+        "https://personal.nedbank.co.za/learn/blog/safe-payments-using-virtual-bank-cards.html",
+        "https://personal.nedbank.co.za/learn/blog/saving-versus-investing.html",
+        "https://personal.nedbank.co.za/learn/blog/tap-on-phone-payments-for-business-owners.html",
+        "https://personal.nedbank.co.za/learn/blog/top-questions-chatbot-enbi-is-asked.html",
+        "https://personal.nedbank.co.za/learn/blog/travel-tips-from-thobi-rose.html",
+        "https://personal.nedbank.co.za/learn/blog/ways-to-invest-500-rand-monthly.html",
+        "https://personal.nedbank.co.za/learn/blog/why-nambitha-is-planning-for-retirement.html",
+        "https://personal.nedbank.co.za/learn/blog/why-your-will-is-so-important.html",
+        "https://personal.nedbank.co.za/learn/blog/women-take-charge-of-your-financial-independence.html",
+        "https://personal.nedbank.co.za/learn/blog/your-personal-details-on-the-dark-web.html"
+      ],
+      "description": "Blog article: hero image, byline, article body, related-posts carousel"
+    },
+    {
+      "name": "legal-account-closures",
+      "representativePages": [
+        "https://personal.nedbank.co.za/legal/account-closures-and-termination-of-agreements.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/legal/account-closures-and-termination-of-agreements.html"
+      ],
+      "description": "Legal document: account closures and termination"
+    },
+    {
+      "name": "legal-disclaimer",
+      "representativePages": [
+        "https://personal.nedbank.co.za/legal/disclaimer.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/legal/disclaimer.html"
+      ],
+      "description": "Legal disclaimer document page"
+    },
+    {
+      "name": "legal-terms-voyager",
+      "representativePages": [
+        "https://personal.nedbank.co.za/legal/terms-and-conditions/SAA-Voyager-Credit-Cards-terms-and-conditions.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/legal/terms-and-conditions/SAA-Voyager-Credit-Cards-terms-and-conditions.html",
+        "https://personal.nedbank.co.za/legal/terms-and-conditions/saa-voyager-credit-card-benefits.html"
+      ],
+      "description": "Voyager credit card terms and conditions document"
+    },
+    {
+      "name": "legal-terms-greenbacks",
+      "representativePages": [
+        "https://personal.nedbank.co.za/legal/terms-and-conditions/greenbacks-rewards-terms-and-conditions.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/legal/terms-and-conditions/greenbacks-rewards-terms-and-conditions.html"
+      ],
+      "description": "Greenbacks rewards terms and conditions document"
+    },
+    {
+      "name": "legal-terms-and-conditions",
+      "representativePages": [
+        "https://personal.nedbank.co.za/legal/terms-and-conditions.html",
+        "https://personal.nedbank.co.za/nedbank-connect/check-coverage.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/legal/terms-and-conditions.html",
+        "https://personal.nedbank.co.za/nedbank-connect/check-coverage.html"
+      ],
+      "description": "General terms and conditions document page"
+    },
+    {
+      "name": "product-detail-prepaid-bundles",
+      "representativePages": [
+        "https://personal.nedbank.co.za/nedbank-connect/prepaid-bundles.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/nedbank-connect/prepaid-bundles.html",
+        "https://personal.nedbank.co.za/nedbank-connect/why-choose-us.html"
+      ],
+      "description": "Prepaid connectivity bundles product detail page"
+    },
+    {
+      "name": "product-detail-planning-services",
+      "representativePages": [
+        "https://personal.nedbank.co.za/plan/estate-planning-wills-trust-services.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/plan/estate-planning-wills-trust-services.html",
+        "https://personal.nedbank.co.za/plan/financial-planning.html",
+        "https://personal.nedbank.co.za/plan/speak-to-a-financial-adviser-nedbank.html"
+      ],
+      "description": "Financial/estate planning service detail page"
+    },
+    {
+      "name": "category-landing-plan",
+      "representativePages": [
+        "https://personal.nedbank.co.za/plan.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/plan.html"
+      ],
+      "description": "Planning category landing page"
+    },
+    {
+      "name": "promotion-detail",
+      "representativePages": [
+        "https://personal.nedbank.co.za/promotions/money-appventure.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/promotions/money-appventure.html",
+        "https://personal.nedbank.co.za/promotions/numetro-greenbacks.html"
+      ],
+      "description": "Promotional campaign detail page"
+    },
+    {
+      "name": "product-detail-fixed-deposit",
+      "representativePages": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/end-of-term/electronic-fixed-deposit.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/end-of-term/electronic-fixed-deposit.html"
+      ],
+      "description": "Electronic fixed deposit product detail page"
+    },
+    {
+      "name": "application-form-fixed-deposit",
+      "representativePages": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/end-of-term/electronic-fixed-deposit/ready-to-apply.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/end-of-term/electronic-fixed-deposit/ready-to-apply.html"
+      ],
+      "description": "Ready-to-apply page: things-to-know cards, documents checklist, ways-to-open CTAs"
+    },
+    {
+      "name": "product-detail-tax-free-fixed-deposit",
+      "representativePages": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/end-of-term/tax-free-fixed-deposit.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/end-of-term/tax-free-fixed-deposit.html"
+      ],
+      "description": "Tax-free fixed deposit product detail page"
+    },
+    {
+      "name": "application-form-tax-free-fixed-deposit",
+      "representativePages": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/end-of-term/tax-free-fixed-deposit/ready-to-apply.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/end-of-term/tax-free-fixed-deposit/ready-to-apply.html"
+      ],
+      "description": "Ready-to-apply application page for tax-free fixed deposit"
+    },
+    {
+      "name": "product-detail-easy-access-deposit",
+      "representativePages": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/easy-access-deposit.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/easy-access-deposit.html"
+      ],
+      "description": "Easy access deposit product detail page"
+    },
+    {
+      "name": "application-form-easy-access-deposit",
+      "representativePages": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/easy-access-deposit/ready-to-apply.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/easy-access-deposit/ready-to-apply.html"
+      ],
+      "description": "Ready-to-apply application page for easy access deposit"
+    },
+    {
+      "name": "product-detail-justinvest",
+      "representativePages": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/justinvest.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/justinvest.html"
+      ],
+      "description": "JustInvest product detail page"
+    },
+    {
+      "name": "application-form-justinvest",
+      "representativePages": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/justinvest/ready-to-apply.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/justinvest/ready-to-apply.html"
+      ],
+      "description": "Ready-to-apply application page for JustInvest"
+    },
+    {
+      "name": "product-detail-moneytrader",
+      "representativePages": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/moneytrader.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/moneytrader.html"
+      ],
+      "description": "MoneyTrader product detail page"
+    },
+    {
+      "name": "application-form-moneytrader",
+      "representativePages": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/moneytrader/ready-to-apply.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/moneytrader/ready-to-apply.html"
+      ],
+      "description": "Ready-to-apply application page for MoneyTrader"
+    },
+    {
+      "name": "product-detail-platinuminvest",
+      "representativePages": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/platinuminvest.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/platinuminvest.html"
+      ],
+      "description": "PlatinumInvest product detail page"
+    },
+    {
+      "name": "application-form-platinuminvest",
+      "representativePages": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/platinuminvest/ready-to-apply.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/platinuminvest/ready-to-apply.html"
+      ],
+      "description": "Ready-to-apply application page for PlatinumInvest"
+    },
+    {
+      "name": "product-detail-tax-free-savings",
+      "representativePages": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/tax-free-savings.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/tax-free-savings.html"
+      ],
+      "description": "Tax-free savings product detail page"
+    },
+    {
+      "name": "application-form-tax-free-savings",
+      "representativePages": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/tax-free-savings/ready-to-apply.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/tax-free-savings/ready-to-apply.html"
+      ],
+      "description": "Ready-to-apply application page for tax-free savings"
+    },
+    {
+      "name": "product-detail-group-savings",
+      "representativePages": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/on-demand/group-savings.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/on-demand/group-savings.html"
+      ],
+      "description": "Group savings product detail page"
+    },
+    {
+      "name": "application-form-group-savings",
+      "representativePages": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/on-demand/group-savings/ready-to-apply.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/on-demand/group-savings/ready-to-apply.html"
+      ],
+      "description": "Ready-to-apply application page for group savings"
+    },
+    {
+      "name": "product-overview-secure-investments",
+      "representativePages": [
+        "https://personal.nedbank.co.za/save-and-invest/secure-investments.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/save-and-invest/secure-investments.html"
+      ],
+      "description": "Secure investments overview landing page"
+    },
+    {
+      "name": "product-detail-share-trading",
+      "representativePages": [
+        "https://personal.nedbank.co.za/save-and-invest/share-trading.html"
+      ],
+      "urls": [
+        "https://personal.nedbank.co.za/save-and-invest/share-trading.html"
+      ],
+      "description": "Share trading product detail page"
+    }
+  ]
+}

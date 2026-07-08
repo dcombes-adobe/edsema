@@ -1,0 +1,100 @@
+/* Block: cards-overview
+   Values extracted from source computed styles (personal.nedbank.co.za #NBD_OVERVIEWCARDS_1). */
+
+/* Deck: flex wrap, centered so an incomplete last row stays centered (matches source). */
+.cards-overview > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* Card */
+.cards-overview > ul > li {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 225px;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  background-color: var(--background-color);
+  border: 1px solid #e5edec;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 10%);
+  text-align: center;
+  position: relative;
+}
+
+/* Icon with subtle circular backdrop (source uses intercept_bg.svg circle). */
+.cards-overview .cards-overview-card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin-top: 16px;
+  border-radius: 50%;
+  background-color: #f4f6f6;
+  line-height: 0;
+}
+
+.cards-overview .cards-overview-card-image picture,
+.cards-overview .cards-overview-card-image img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Card body */
+.cards-overview .cards-overview-card-body {
+  margin: 24px 0;
+}
+
+.cards-overview .cards-overview-card-body h5 {
+  margin: 0;
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #17252e;
+}
+
+.cards-overview .cards-overview-card-body p {
+  margin: 8px 0 0;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--text-secondary-color);
+}
+
+/* Arrow link: the last paragraph holds an (empty-text) link that fills the card
+   and shows a green right-arrow. Make the whole card clickable via a stretched link. */
+.cards-overview .cards-overview-card-body p:last-child {
+  margin: 24px 0 0;
+  line-height: 0;
+}
+
+.cards-overview .cards-overview-card-body p:last-child a {
+  display: inline-block;
+  width: 23px;
+  height: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='14' viewBox='0 0 23 14' fill='none'%3E%3Cpath d='M16 1l6 6-6 6M22 7H0' stroke='%23008533' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-decoration: none;
+}
+
+/* Whole-card click target (source uses .stretched-link). */
+.cards-overview .cards-overview-card-body p:last-child a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.cards-overview .cards-overview-card-body p:last-child a:hover {
+  filter: brightness(0.85);
+}

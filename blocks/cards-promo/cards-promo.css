@@ -1,0 +1,94 @@
+/* cards-promo -- Promotions section (3-card grid) */
+
+/* Values extracted from source #NBD_PROMOTIONCARDS_1 computed styles */
+
+.cards-promo > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px 35px;
+}
+
+@media (width >= 900px) {
+  .cards-promo > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cards-promo > ul > li {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  border-radius: 4px;
+}
+
+/* image: landscape, top-rounded corners, cover crop */
+.cards-promo .cards-promo-card-image {
+  line-height: 0;
+}
+
+.cards-promo .cards-promo-card-image img {
+  width: 100%;
+  aspect-ratio: 320 / 151;
+  object-fit: cover;
+  border-radius: 3px 3px 0 0;
+}
+
+/* body */
+.cards-promo .cards-promo-card-body {
+  margin: 24px 0 32px;
+}
+
+/* title */
+.cards-promo .cards-promo-card-body h4 {
+  margin: 0 0 12px;
+  font-family: var(--heading-font-family);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: var(--text-color);
+}
+
+/* description */
+.cards-promo .cards-promo-card-body p {
+  margin: 14px 0 0;
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--text-secondary-color);
+}
+
+/* CTA "Find out more" with green arrow */
+.cards-promo .cards-promo-card-body p:last-child {
+  margin-top: 16px;
+}
+
+.cards-promo .cards-promo-card-body p:last-child a:any-link {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.cards-promo .cards-promo-card-body p:last-child a:any-link::after {
+  content: "";
+  display: inline-block;
+  width: 23px;
+  height: 14px;
+  margin-left: 8px;
+  background-image: url("https://personal.nedbank.co.za/content/dam/nedbank/icons/resources/button/right-arrow-green.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.cards-promo .cards-promo-card-body p:last-child a:hover {
+  color: var(--link-hover-color);
+  text-decoration: none;
+}
