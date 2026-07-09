@@ -12,8 +12,8 @@ header .nav-wrapper {
 header nav {
   display: flex;
   flex-direction: column;
-  max-width: 1280px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   font-family: var(--body-font-family, "Open Sans", sans-serif);
 }
 
@@ -93,6 +93,13 @@ header nav .nav-tools a:hover {
 }
 
 header nav .nav-tools img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* Country flag keeps its rectangular shape */
+header nav .nav-tools li:nth-child(2) img {
   width: 22px;
   height: 16px;
   object-fit: cover;
