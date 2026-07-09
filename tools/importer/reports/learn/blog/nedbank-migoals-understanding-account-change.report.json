@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/nedbank-migoals-understanding-account-change.html",
+  "path": "learn/blog/nedbank-migoals-understanding-account-change",
+  "timestamp": "2026-07-09T09:02:00.908Z",
+  "title": "Your guide to Nedbank MiGoals account transitions| Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

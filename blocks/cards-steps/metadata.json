@@ -1,0 +1,40 @@
+{
+  "variantName": "cards-steps",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-07-09T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://personal.nedbank.co.za/insure/business-cover.html",
+    "originPage": "Nedbank business insurance product detail",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "purpose": "numbered-process-steps",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "auto-numbered badge (by order) + icon + step title + short description",
+    "buttonCount": 0,
+    "imageCount": 1,
+    "itemCount": 3
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "numbered step-by-step process sequences (e.g. claims process, how-to-apply, onboarding)",
+      "1-2-3 style sequences where each step has an icon, title and short description",
+      "process explainers where the order/number matters"
+    ],
+    "notSuitableFor": [
+      "unordered icon-card grids (use cards-cover)",
+      "icon + short label checklists (use cards-checklist)",
+      "navigational icon tiles (use cards-overview)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/insure/business-cover"],
+    "reuseCount": 1,
+    "lastUsed": "2026-07-09T00:00:00.000Z"
+  }
+}

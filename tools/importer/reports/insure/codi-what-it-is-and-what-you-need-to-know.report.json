@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/insure/codi-what-it-is-and-what-you-need-to-know.html",
+  "path": "insure/codi-what-it-is-and-what-you-need-to-know",
+  "timestamp": "2026-07-09T10:12:48.492Z",
+  "title": "CODI: What it is and what you need to know | Nedbank",
+  "template": "product-detail-insurance",
+  "blocks": [
+    "hero-product",
+    "columns-feature",
+    "cards-cover"
+  ]
+}

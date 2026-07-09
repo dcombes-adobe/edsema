@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/power-of-saving-through-stokvel-account.html",
+  "path": "learn/blog/power-of-saving-through-stokvel-account",
+  "timestamp": "2026-07-09T09:02:45.349Z",
+  "title": "Get the benefits of a Nedbank Stokvel Account | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

@@ -394,6 +394,229 @@
           ]
         }
       ]
+    },
+    {
+      "name": "blog-article",
+      "urls": [
+        "https://personal.nedbank.co.za/learn/blog/5-reasons-not-to-withdraw-cash-from-a-credit-card.html"
+      ],
+      "representativeUrl": "https://personal.nedbank.co.za/learn/blog/5-reasons-not-to-withdraw-cash-from-a-credit-card.html",
+      "coverageGaps": [],
+      "description": "Nedbank blog article: hero banner (title/author/date over image), article body (default content), related-posts carousel",
+      "blocks": [
+        {
+          "name": "columns-article",
+          "instances": [
+            ".nbd-article-banner-bg-img"
+          ]
+        },
+        {
+          "name": "carousel-news",
+          "instances": [
+            ".nbd-related-posts-wrapper"
+          ],
+          "section": "green"
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero Banner",
+          "selector": ".nbd-article-banner-bg-img",
+          "style": null,
+          "blocks": [
+            "columns-article"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Article Body",
+          "selector": ".cmp-text.customtext",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".cmp-text.customtext"
+          ]
+        },
+        {
+          "id": "section-3",
+          "name": "Related Posts",
+          "selector": ".nbd-related-posts-wrapper",
+          "style": "green",
+          "blocks": [
+            "carousel-news"
+          ],
+          "defaultContent": [
+            ".nbd-related-posts-wrapper h2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "product-detail-insurance",
+      "urls": [
+        "https://personal.nedbank.co.za/insure/business-cover.html"
+      ],
+      "representativeUrl": "https://personal.nedbank.co.za/insure/business-cover.html",
+      "coverageGaps": [],
+      "description": "Nedbank insurance product page: hero with CTA, why-choose checklist, content split, cover-type icon cards, numbered claims process",
+      "blocks": [
+        {
+          "name": "hero-product",
+          "instances": [
+            "#NBD_BANNER_1"
+          ]
+        },
+        {
+          "name": "cards-checklist",
+          "instances": [
+            "#NBD_WHYCHOOSE_1"
+          ]
+        },
+        {
+          "name": "columns-feature",
+          "instances": [
+            "#NBD_CONTENTBLOCK_1"
+          ]
+        },
+        {
+          "name": "cards-cover",
+          "instances": [
+            "#NBD_ILLUSTRATIONCARD_1"
+          ]
+        },
+        {
+          "name": "cards-steps",
+          "instances": [
+            "#NBD_APPLICATIONPROCESS_1"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero",
+          "selector": "#NBD_BANNER_1",
+          "style": null,
+          "blocks": [
+            "hero-product"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Why Choose",
+          "selector": "#NBD_WHYCHOOSE_1",
+          "style": null,
+          "blocks": [
+            "cards-checklist"
+          ],
+          "defaultContent": [
+            "#NBD_WHYCHOOSE_1 h2"
+          ]
+        },
+        {
+          "id": "section-3",
+          "name": "Content Split",
+          "selector": "#NBD_CONTENTBLOCK_1",
+          "style": null,
+          "blocks": [
+            "columns-feature"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Cover Types",
+          "selector": "#NBD_ILLUSTRATIONCARD_1",
+          "style": null,
+          "blocks": [
+            "cards-cover"
+          ],
+          "defaultContent": [
+            "#NBD_ILLUSTRATIONCARD_1 h2"
+          ]
+        },
+        {
+          "id": "section-5",
+          "name": "Claims Process",
+          "selector": "#NBD_APPLICATIONPROCESS_1",
+          "style": "light-green",
+          "blocks": [
+            "cards-steps"
+          ],
+          "defaultContent": [
+            "#NBD_APPLICATIONPROCESS_1 h2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "application-form",
+      "urls": [
+        "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/justinvest/ready-to-apply.html"
+      ],
+      "representativeUrl": "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/justinvest/ready-to-apply.html",
+      "coverageGaps": [],
+      "description": "Nedbank ready-to-apply application page: things-to-know info cards, documents checklist, ways-to-open CTA cards, footer notes",
+      "blocks": [
+        {
+          "name": "cards-info",
+          "instances": [
+            "#NBD_ELIGIBILITYNEEDS_1 .eligibility .qualify-list"
+          ]
+        },
+        {
+          "name": "cards-checklist",
+          "instances": [
+            "#NBD_ELIGIBILITYNEEDS_1 .eligibility .doclist"
+          ]
+        },
+        {
+          "name": "cards-cta",
+          "instances": [
+            "#NBD_ELIGIBILITYCHANNELS_1 .channel"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Things to Know",
+          "selector": "#NBD_ELIGIBILITYNEEDS_1",
+          "style": null,
+          "blocks": [
+            "cards-info",
+            "cards-checklist"
+          ],
+          "defaultContent": [
+            "#NBD_ELIGIBILITYNEEDS_1 h2"
+          ]
+        },
+        {
+          "id": "section-2",
+          "name": "Ways to Open",
+          "selector": "#NBD_ELIGIBILITYCHANNELS_1",
+          "style": null,
+          "blocks": [
+            "cards-cta"
+          ],
+          "defaultContent": [
+            "#NBD_ELIGIBILITYCHANNELS_1 h2"
+          ]
+        },
+        {
+          "id": "section-3",
+          "name": "Footer Notes",
+          "selector": "#NBD_TEXT_1",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "#NBD_TEXT_1 .cmp-text.customtext"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/greenbacks-levels.html",
+  "path": "learn/blog/greenbacks-levels",
+  "timestamp": "2026-07-09T09:00:53.026Z",
+  "title": "Greenbacks updated: Enhanced rewards and new levels | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

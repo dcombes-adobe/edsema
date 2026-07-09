@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/pick-the-perfect-bank-account.html",
+  "path": "learn/blog/pick-the-perfect-bank-account",
+  "timestamp": "2026-07-09T09:02:36.557Z",
+  "title": "Picking the right bank account for your needs | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

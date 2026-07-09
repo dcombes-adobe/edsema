@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/save-and-invest/accounts/on-demand/group-savings/ready-to-apply.html",
+  "path": "save-and-invest/accounts/on-demand/group-savings/ready-to-apply",
+  "timestamp": "2026-07-09T10:14:28.070Z",
+  "title": "How to open a Group Savings Account | Nedbank",
+  "template": "application-form",
+  "blocks": [
+    "cards-info",
+    "cards-checklist"
+  ]
+}

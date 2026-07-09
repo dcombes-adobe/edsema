@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/getting-business-payments-on-whatsapp.html",
+  "path": "learn/blog/getting-business-payments-on-whatsapp",
+  "timestamp": "2026-07-09T09:00:41.239Z",
+  "title": "Money Message: Easy, secure payments via WhatsApp | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

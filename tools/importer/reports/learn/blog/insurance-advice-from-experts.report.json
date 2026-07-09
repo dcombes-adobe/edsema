@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/insurance-advice-from-experts.html",
+  "path": "learn/blog/insurance-advice-from-experts",
+  "timestamp": "2026-07-09T09:01:08.972Z",
+  "title": "Why it pays to get insurance advice from experts",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

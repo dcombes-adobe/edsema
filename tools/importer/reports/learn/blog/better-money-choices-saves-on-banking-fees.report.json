@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/better-money-choices-saves-on-banking-fees.html",
+  "path": "learn/blog/better-money-choices-saves-on-banking-fees",
+  "timestamp": "2026-07-09T08:59:45.535Z",
+  "title": "4 better money choices to save on banking costs | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

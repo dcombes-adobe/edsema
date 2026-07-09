@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/receiving-international-payments-on-money-app.html",
+  "path": "learn/blog/receiving-international-payments-on-money-app",
+  "timestamp": "2026-07-09T09:02:52.994Z",
+  "title": "The easy way to receive international payments | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

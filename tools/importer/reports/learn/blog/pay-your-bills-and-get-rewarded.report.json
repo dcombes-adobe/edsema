@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/pay-your-bills-and-get-rewarded.html",
+  "path": "learn/blog/pay-your-bills-and-get-rewarded",
+  "timestamp": "2026-07-09T09:02:19.463Z",
+  "title": "Pay your regular bills automatically and get rewards | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

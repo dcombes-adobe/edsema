@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-info",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-07-09T09:43:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/justinvest/ready-to-apply.html",
+    "originPage": "JustInvest ready-to-apply application page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "purpose": "info-icon-cards",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "icon + short description paragraph (no title, no link)",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "'things you need to know' / eligibility info cards on application pages",
+      "informational icon-card grids where each card is a small icon plus one short descriptive sentence",
+      "note/fact tiles with icon + short text, non-navigational, on a light background"
+    ],
+    "notSuitableFor": [
+      "cards that need a distinct title plus a description paragraph (use cards-cover)",
+      "navigational tiles where the whole card is a link (use cards-overview or cards-cta)",
+      "checklist rows of icon + short label (use cards-checklist)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/save-and-invest/accounts/in-24hrs/justinvest/ready-to-apply"],
+    "reuseCount": 1,
+    "lastUsed": "2026-07-09T09:43:00.000Z"
+  }
+}

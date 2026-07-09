@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/easy-access-deposit/ready-to-apply.html",
+  "path": "save-and-invest/accounts/in-24hrs/easy-access-deposit/ready-to-apply",
+  "timestamp": "2026-07-09T10:13:56.098Z",
+  "title": "Open an EasyAccess Deposit Account | Nedbank",
+  "template": "application-form",
+  "blocks": [
+    "cards-info",
+    "cards-checklist",
+    "cards-cta"
+  ]
+}

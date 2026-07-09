@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/platinuminvest/ready-to-apply.html",
+  "path": "save-and-invest/accounts/in-24hrs/platinuminvest/ready-to-apply",
+  "timestamp": "2026-07-09T10:14:15.685Z",
+  "title": "How to open a Platinum Invest account | Nedbank",
+  "template": "application-form",
+  "blocks": [
+    "cards-info",
+    "cards-checklist",
+    "cards-cta"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/boost-your-emergency-savings-with-greenbacks.html",
+  "path": "learn/blog/boost-your-emergency-savings-with-greenbacks",
+  "timestamp": "2026-07-09T08:59:56.329Z",
+  "title": "Building your emergency savings fund made easy | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

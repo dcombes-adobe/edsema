@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/insure/life-cover.html",
+  "path": "insure/life-cover",
+  "timestamp": "2026-07-09T10:13:17.072Z",
+  "title": "Protect your family when life happens | Nedbank Insurance",
+  "template": "product-detail-insurance",
+  "blocks": [
+    "cards-steps"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/evolution-of-payments-and-future-of-credit-cards.html",
+  "path": "learn/blog/evolution-of-payments-and-future-of-credit-cards",
+  "timestamp": "2026-07-09T09:00:21.550Z",
+  "title": "The future of credit cards | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

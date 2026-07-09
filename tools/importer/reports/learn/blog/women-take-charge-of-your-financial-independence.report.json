@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/women-take-charge-of-your-financial-independence.html",
+  "path": "learn/blog/women-take-charge-of-your-financial-independence",
+  "timestamp": "2026-07-09T09:04:33.468Z",
+  "title": "Women, take charge of your financial independence",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

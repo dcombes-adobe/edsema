@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/travel-tips-from-thobi-rose.html",
+  "path": "learn/blog/travel-tips-from-thobi-rose",
+  "timestamp": "2026-07-09T09:03:49.694Z",
+  "title": "5 top travel tips from Thobi Rose | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

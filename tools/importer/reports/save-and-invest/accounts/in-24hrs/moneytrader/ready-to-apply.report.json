@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/moneytrader/ready-to-apply.html",
+  "path": "save-and-invest/accounts/in-24hrs/moneytrader/ready-to-apply",
+  "timestamp": "2026-07-09T10:14:10.398Z",
+  "title": "How to open a MoneyTrader account | Nedbank",
+  "template": "application-form",
+  "blocks": [
+    "cards-info",
+    "cards-checklist",
+    "cards-cta"
+  ]
+}

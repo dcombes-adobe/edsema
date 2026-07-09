@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/save-and-invest/accounts/end-of-term/electronic-fixed-deposit/ready-to-apply.html",
+  "path": "save-and-invest/accounts/end-of-term/electronic-fixed-deposit/ready-to-apply",
+  "timestamp": "2026-07-09T10:13:43.134Z",
+  "title": "How to open an Electronic Fixed-deposit Account | Nedbank",
+  "template": "application-form",
+  "blocks": [
+    "cards-info",
+    "cards-checklist",
+    "cards-cta"
+  ]
+}

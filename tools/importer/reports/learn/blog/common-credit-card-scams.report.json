@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/common-credit-card-scams.html",
+  "path": "learn/blog/common-credit-card-scams",
+  "timestamp": "2026-07-09T09:00:05.088Z",
+  "title": "Protect yourself against credit card scams | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/avoid-early-withdrawal-on-your-retirement-savings.html",
+  "path": "learn/blog/avoid-early-withdrawal-on-your-retirement-savings",
+  "timestamp": "2026-07-09T08:59:11.359Z",
+  "title": "Withdrawing retirement savings early is a bad idea | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

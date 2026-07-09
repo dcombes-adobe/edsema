@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/insure/travel-insurance.html",
+  "path": "insure/travel-insurance",
+  "timestamp": "2026-07-09T10:13:33.718Z",
+  "title": "Going places? Go with our travel insurance | Nedbank",
+  "template": "product-detail-insurance",
+  "blocks": [
+    "cards-steps"
+  ]
+}

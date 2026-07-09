@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/saving-versus-investing.html",
+  "path": "learn/blog/saving-versus-investing",
+  "timestamp": "2026-07-09T09:03:21.027Z",
+  "title": "How is saving different from investing? | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

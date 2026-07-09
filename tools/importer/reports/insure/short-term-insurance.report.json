@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/insure/short-term-insurance.html",
+  "path": "insure/short-term-insurance",
+  "timestamp": "2026-07-09T10:13:25.066Z",
+  "title": "Cover for all your assets? We’ve got you | Nedbank Insurance",
+  "template": "product-detail-insurance",
+  "blocks": [
+    "hero-product",
+    "cards-cover"
+  ]
+}

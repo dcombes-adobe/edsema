@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/ai-and-future-of-banking.html",
+  "path": "learn/blog/ai-and-future-of-banking",
+  "timestamp": "2026-07-09T08:58:10.617Z",
+  "title": "Enbi and AI: evolving the future of banking | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

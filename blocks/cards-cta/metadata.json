@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-cta",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-07-09T09:43:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://personal.nedbank.co.za/save-and-invest/accounts/in-24hrs/justinvest/ready-to-apply.html",
+    "originPage": "JustInvest ready-to-apply application page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "mixed",
+    "density": "compact",
+    "purpose": "cta-cards",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "title + arrow link (whole card clickable); first card dark charcoal, rest light",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "'ways to open / ways to apply' CTA card rows with a bold title and a single link per card",
+      "channel-selection cards (e.g. 'Use the Money app', 'Ask us to call you back') where the whole card is clickable",
+      "short action cards where the first card is emphasised with a dark/charcoal background"
+    ],
+    "notSuitableFor": [
+      "cards with descriptive body text and icons (use cards-info or cards-cover)",
+      "image-forward navigation tiles (use cards-image-cta)",
+      "icon + short label checklists (use cards-checklist)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/save-and-invest/accounts/in-24hrs/justinvest/ready-to-apply"],
+    "reuseCount": 1,
+    "lastUsed": "2026-07-09T09:43:00.000Z"
+  }
+}

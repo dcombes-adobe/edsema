@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/payshap-new-payment-method-fast-as-cash.html",
+  "path": "learn/blog/payshap-new-payment-method-fast-as-cash",
+  "timestamp": "2026-07-09T09:02:27.561Z",
+  "title": "PayShap – A new payment method as fast as cash | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

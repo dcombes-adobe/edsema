@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/top-questions-chatbot-enbi-is-asked.html",
+  "path": "learn/blog/top-questions-chatbot-enbi-is-asked",
+  "timestamp": "2026-07-09T09:03:39.624Z",
+  "title": "The top questions Enbi gets asked | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

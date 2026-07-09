@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/funding-your-bank-account-so-it-stays-active.html",
+  "path": "learn/blog/funding-your-bank-account-so-it-stays-active",
+  "timestamp": "2026-07-09T09:00:30.797Z",
+  "title": "How to fund your bank account so it stays active | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

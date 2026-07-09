@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/reinvestment-for-growth.html",
+  "path": "learn/blog/reinvestment-for-growth",
+  "timestamp": "2026-07-09T09:02:59.842Z",
+  "title": "Reinvest your returns for growth | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

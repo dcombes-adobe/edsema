@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/insure/how-to-claim.html",
+  "path": "insure/how-to-claim",
+  "timestamp": "2026-07-09T10:13:11.191Z",
+  "title": "Insurance claim forms | Nedbank",
+  "template": "product-detail-insurance",
+  "blocks": [
+    "hero-product",
+    "columns-feature",
+    "cards-cover",
+    "cards-steps"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/how-to-send-money-abroad.html",
+  "path": "learn/blog/how-to-send-money-abroad",
+  "timestamp": "2026-07-09T09:01:00.465Z",
+  "title": "What you need to know about sending money abroad | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/insure/credit-life.html",
+  "path": "insure/credit-life",
+  "timestamp": "2026-07-09T10:12:55.025Z",
+  "title": "Debt? Make sure it’s covered with us | Nedbank Insurance",
+  "template": "product-detail-insurance",
+  "blocks": [
+    "hero-product",
+    "cards-cover"
+  ]
+}

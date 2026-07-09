@@ -1,0 +1,144 @@
+/* stylelint-disable no-descending-specificity */
+
+/* Block: cards-steps -- "Simple, fast claims process" numbered step sequence */
+
+.cards-steps > ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: step;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+/* Each step: numbered badge on top, card below */
+.cards-steps > ol > li {
+  position: relative;
+  counter-increment: step;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  /* room for the numbered badge that overlaps the top of the card */
+  padding-top: 72px;
+}
+
+/* Numbered circle badge, derived from step order */
+.cards-steps > ol > li::before {
+  content: counter(step);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  box-sizing: border-box;
+  width: 106px;
+  height: 106px;
+  border-radius: 50%;
+  border: 1px solid rgb(12 132 80);
+  background-color: var(--background-color);
+  color: rgb(33 37 41);
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card container (the region below the badge) */
+.cards-steps > ol > li > .cards-steps-card-image,
+.cards-steps > ol > li > .cards-steps-card-body {
+  background-color: var(--background-color);
+  border-left: 1px solid rgb(229 237 236);
+  border-right: 1px solid rgb(229 237 236);
+}
+
+.cards-steps > ol > li > .cards-steps-card-image {
+  border-top: 1px solid rgb(229 237 236);
+  border-radius: 12px 12px 0 0;
+  padding: 49px 24px 0;
+  text-align: center;
+  box-shadow: rgb(0 0 0 / 10%) 0 -12px 20px -18px;
+}
+
+.cards-steps > ol > li > .cards-steps-card-body {
+  border-bottom: 1px solid rgb(229 237 236);
+  border-radius: 0 0 12px 12px;
+  padding: 0 24px 42px;
+  text-align: center;
+  box-shadow: rgb(0 0 0 / 10%) 0 25px 20px -15px;
+}
+
+/* Icon inside a soft grey circle */
+.cards-steps .cards-steps-card-image {
+  line-height: 0;
+}
+
+.cards-steps .cards-steps-card-image picture {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: rgb(242 249 245);
+}
+
+.cards-steps .cards-steps-card-image img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.cards-steps .cards-steps-card-body h5 {
+  margin: 24px 0 8px;
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: rgb(33 37 41);
+}
+
+.cards-steps .cards-steps-card-body p {
+  margin: 0;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(73 79 80);
+}
+
+.cards-steps .cards-steps-card-body a:any-link {
+  color: var(--link-color);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cards-steps .cards-steps-card-body a:hover {
+  text-decoration: underline;
+}
+
+@media (width >= 900px) {
+  .cards-steps > ol {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    /* extra top space so the badge row sits clear of the section top */
+    padding-top: 8px;
+  }
+
+  /* connector line linking the numbered badges across steps */
+  .cards-steps > ol > li:not(:first-child)::after {
+    content: '';
+    position: absolute;
+    top: 53px;
+    right: 50%;
+    left: -50%;
+    height: 1px;
+    background-color: rgb(12 132 80);
+    z-index: 1;
+  }
+}

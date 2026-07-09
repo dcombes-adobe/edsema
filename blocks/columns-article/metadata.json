@@ -24,8 +24,8 @@
     "notSuitableFor": ["image-only layouts", "multi-card grids", "FAQ sections"]
   },
   "usage": {
-    "pagesUsing": ["content/index"],
-    "reuseCount": 1,
-    "lastUsed": "2026-03-24T14:27:00.000Z"
+    "pagesUsing": ["content/index", "/learn/blog/5-reasons-not-to-withdraw-cash-from-a-credit-card"],
+    "reuseCount": 2,
+    "lastUsed": "2026-07-09T00:00:00.000Z"
   }
 }

@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/bank-atm-cctv-footage.html",
+  "path": "learn/blog/bank-atm-cctv-footage",
+  "timestamp": "2026-07-09T08:59:20.220Z",
+  "title": "ATM fraud: How long does the bank keep CCTV footage? | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/benefits-of-tax-free-savings-and-investments.html",
+  "path": "learn/blog/benefits-of-tax-free-savings-and-investments",
+  "timestamp": "2026-07-09T08:59:36.626Z",
+  "title": "Save more with tax-free investments | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

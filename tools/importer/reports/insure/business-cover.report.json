@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/insure/business-cover.html",
+  "path": "insure/business-cover",
+  "timestamp": "2026-07-09T10:12:38.751Z",
+  "title": "Is your business covered? | Nedbank Insurance",
+  "template": "product-detail-insurance",
+  "blocks": [
+    "hero-product",
+    "cards-checklist",
+    "columns-feature",
+    "cards-cover",
+    "cards-steps"
+  ]
+}

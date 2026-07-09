@@ -1,0 +1,38 @@
+{
+  "variantName": "hero-product",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-07-09T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://personal.nedbank.co.za/insure/business-cover.html",
+    "originPage": "Nedbank business insurance product detail",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "product-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + paragraph + 1 CTA + side photo",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "insurance/product detail page heroes with a heading, intro copy and a single 'get a call back' style CTA beside a photo",
+      "light-background product banners with a supporting lifestyle photo"
+    ],
+    "notSuitableFor": [
+      "dark full-bleed background-image heroes (use hero-banner)",
+      "video/media banner heroes (use hero-video-banner)",
+      "search heroes (use hero-search)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/insure/business-cover"],
+    "reuseCount": 1,
+    "lastUsed": "2026-07-09T00:00:00.000Z"
+  }
+}

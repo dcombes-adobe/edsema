@@ -1,0 +1,43 @@
+{
+  "variantName": "cards-checklist",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-07-09T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://personal.nedbank.co.za/insure/business-cover.html",
+    "originPage": "Nedbank business insurance product detail",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "feature-checklist",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "icon + short text label (no title/description, no link)",
+    "buttonCount": 0,
+    "imageCount": 1,
+    "itemCount": 4
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "'why choose' / 'our offering' feature checklists where each item is a tick/check icon plus a short label",
+      "benefit or capability lists with icon + one short phrase per item",
+      "inline icon-label rows on a tinted band"
+    ],
+    "notSuitableFor": [
+      "navigational icon tiles with title + link (use cards-overview)",
+      "cards with title + full description (use cards-cover)",
+      "numbered process steps (use cards-steps)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/insure/business-cover",
+      "/save-and-invest/accounts/in-24hrs/justinvest/ready-to-apply"
+    ],
+    "reuseCount": 2,
+    "lastUsed": "2026-07-09T09:43:00.000Z"
+  }
+}

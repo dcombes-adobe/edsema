@@ -1,0 +1,93 @@
+/* cards-cta: "Ways to open your account" CTA cards.
+   Each card: a title (top-left) + a whole-card clickable link showing a
+   trailing arrow (bottom-centre). First card is dark (charcoal), the
+   remaining cards are light (white with border). Values extracted from
+   the Nedbank ready-to-apply source (#NBD_ELIGIBILITYCHANNELS_1 .channel). */
+
+.cards-cta > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+@media (width >= 600px) {
+  .cards-cta > ul {
+    grid-template-columns: repeat(2, minmax(0, 285px));
+  }
+}
+
+.cards-cta > ul > li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 242px;
+  padding: 0 0 20px;
+  border: 1px solid #e5edec;
+  border-radius: 12px;
+  box-shadow: rgb(0 0 0 / 10%) 0 25px 20px -15px;
+  background-color: #fff;
+}
+
+/* title cell */
+.cards-cta .cards-cta-card-body {
+  margin: 0;
+  padding: 48px 32px 0;
+}
+
+.cards-cta .cards-cta-card-body h5,
+.cards-cta .cards-cta-card-body p {
+  margin: 0 0 31px;
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #17252e;
+}
+
+/* link cell: only the arrow shows, the link text is visually hidden.
+   The whole card is clickable via the stretched link. */
+.cards-cta .cards-cta-card-body:has(> p) {
+  margin-top: auto;
+  padding: 0;
+  text-align: center;
+}
+
+.cards-cta .cards-cta-card-body p {
+  margin: 0;
+}
+
+.cards-cta .cards-cta-clickable .cards-cta-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  font-size: 0;
+  color: transparent;
+}
+
+/* trailing arrow (green) drawn bottom-centre of the card */
+.cards-cta .cards-cta-clickable::after {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 13px;
+  margin: 12px auto 0;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="13" viewBox="0 0 24 13" fill="none" stroke="%23009639"><polyline transform="translate(15.5 6.5) rotate(-315) translate(-15.5 -6.5)" points="10.95 1.95 20.05 1.95 20.05 11.05"/><line x1="20.9166667" y1="6.5" x2="0.0833333333" y2="6.5" stroke-linecap="square"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* first card = dark charcoal with white title and white arrow */
+.cards-cta > ul > li:first-child {
+  background-color: #17252e;
+}
+
+.cards-cta > ul > li:first-child .cards-cta-card-body h5 {
+  color: #fff;
+}
+
+.cards-cta > ul > li:first-child.cards-cta-clickable::after {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="13" viewBox="0 0 24 13" fill="none" stroke="%23ffffff"><polyline transform="translate(15.5 6.5) rotate(-315) translate(-15.5 -6.5)" points="10.95 1.95 20.05 1.95 20.05 11.05"/><line x1="20.9166667" y1="6.5" x2="0.0833333333" y2="6.5" stroke-linecap="square"/></svg>');
+}

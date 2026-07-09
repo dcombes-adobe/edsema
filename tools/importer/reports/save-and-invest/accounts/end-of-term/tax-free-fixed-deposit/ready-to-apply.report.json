@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/save-and-invest/accounts/end-of-term/tax-free-fixed-deposit/ready-to-apply.html",
+  "path": "save-and-invest/accounts/end-of-term/tax-free-fixed-deposit/ready-to-apply",
+  "timestamp": "2026-07-09T10:13:49.047Z",
+  "title": "Get a Tax-Free Fixed Deposit account | Nedbank",
+  "template": "application-form",
+  "blocks": [
+    "cards-info",
+    "cards-checklist",
+    "cards-cta"
+  ]
+}

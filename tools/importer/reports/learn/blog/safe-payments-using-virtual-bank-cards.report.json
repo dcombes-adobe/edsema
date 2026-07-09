@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/safe-payments-using-virtual-bank-cards.html",
+  "path": "learn/blog/safe-payments-using-virtual-bank-cards",
+  "timestamp": "2026-07-09T09:03:08.579Z",
+  "title": "Virtual cards make online purchases more secure | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

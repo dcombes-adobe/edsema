@@ -1,0 +1,146 @@
+/* hero-product -- product hero. Text (heading + intro + CTA) left, photo right. */
+
+/* Values extracted from source #NBD_BANNER_1 computed styles. */
+
+/* full-width: cancel section max-width/padding so image reaches the edge */
+.hero-product-wrapper {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.hero-product {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+}
+
+/* content column */
+.hero-product .hero-product-content {
+  box-sizing: border-box;
+  padding: 32px 24px;
+}
+
+.hero-product .hero-product-content h1 {
+  margin: 0 0 24px;
+  font-family: var(--heading-font-family);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  color: rgb(23 37 46);
+}
+
+.hero-product .hero-product-content p {
+  margin: 0;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--text-secondary-color);
+}
+
+/* CTA: green text link with right-arrow icon (not a filled button) */
+.hero-product .hero-product-content .button-container {
+  margin: 24px 0 0;
+}
+
+.hero-product .hero-product-content a,
+.hero-product .hero-product-content a.button:any-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background: none;
+  color: var(--brand-green);
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hero-product .hero-product-content a::after,
+.hero-product .hero-product-content a.button:any-link::after {
+  content: "";
+  width: 23px;
+  height: 14px;
+  background-image: url("https://personal.nedbank.co.za/content/dam/nedbank/icons/resources/button/right-arrow-green1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.hero-product .hero-product-content a:hover,
+.hero-product .hero-product-content a.button:hover {
+  color: var(--brand-green-dark);
+  text-decoration: none;
+}
+
+/* image column */
+.hero-product .hero-product-image {
+  order: -1;
+}
+
+.hero-product .hero-product-image picture {
+  display: block;
+  height: 100%;
+}
+
+.hero-product .hero-product-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (width >= 900px) {
+  .hero-product {
+    flex-direction: row-reverse;
+    align-items: stretch;
+    min-height: 500px;
+  }
+
+  .hero-product .hero-product-content {
+    flex: 0 0 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 60px;
+  }
+
+  .hero-product .hero-product-content h1 {
+    font-size: 48px;
+    line-height: 56px;
+    margin: 0 0 32px;
+  }
+
+  .hero-product .hero-product-content p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .hero-product .hero-product-content .button-container {
+    margin: 32px 0 0;
+  }
+
+  .hero-product .hero-product-content a,
+  .hero-product .hero-product-content a.button:any-link {
+    font-size: 18px;
+  }
+
+  .hero-product .hero-product-image {
+    order: 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* no-image variant: content spans full width, keep centered readable column */
+  .hero-product.no-image .hero-product-content {
+    flex: 1 1 auto;
+    max-width: 1140px;
+    margin: 0 auto;
+    align-items: flex-start;
+  }
+}

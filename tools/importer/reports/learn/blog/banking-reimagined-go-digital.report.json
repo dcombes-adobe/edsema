@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/banking-reimagined-go-digital.html",
+  "path": "learn/blog/banking-reimagined-go-digital",
+  "timestamp": "2026-07-09T08:59:28.511Z",
+  "title": "Why going digital is now more important than ever | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

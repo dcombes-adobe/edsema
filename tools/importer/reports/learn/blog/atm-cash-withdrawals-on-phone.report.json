@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/atm-cash-withdrawals-on-phone.html",
+  "path": "learn/blog/atm-cash-withdrawals-on-phone",
+  "timestamp": "2026-07-09T08:58:18.384Z",
+  "title": "Your cellphone is like a portable ATM | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

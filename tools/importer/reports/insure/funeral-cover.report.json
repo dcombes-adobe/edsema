@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/insure/funeral-cover.html",
+  "path": "insure/funeral-cover",
+  "timestamp": "2026-07-09T10:13:01.649Z",
+  "title": "Looking for funeral insurance? Get cover from R30 | Nedbank",
+  "template": "product-detail-insurance",
+  "blocks": [
+    "hero-product"
+  ]
+}

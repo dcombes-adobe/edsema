@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://personal.nedbank.co.za/learn/blog/double-your-money-fast.html",
+  "path": "learn/blog/double-your-money-fast",
+  "timestamp": "2026-07-09T09:00:14.034Z",
+  "title": "How do I double my money fast? | Nedbank",
+  "template": "blog-article",
+  "blocks": [
+    "columns-article",
+    "carousel-news"
+  ]
+}

@@ -1,0 +1,58 @@
+/* cards-checklist -- "Why choose our cover?" feature checklist.
+   Row of items, each with a green tick icon and a short label.
+   Values extracted from source computed styles (#NBD_WHYCHOOSE_1). */
+
+.cards-checklist > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.cards-checklist > ul > li {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 15px 0 0;
+  margin: 0 0 32px;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+/* icon cell (empty authored div) -- render the source green tick */
+.cards-checklist > ul > li > div:first-child {
+  flex: 0 0 auto;
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><polyline points="5 16.2124724 12.2938328 23.3333333 28 8" fill="none" stroke="%23008533" stroke-width="1.5"/></svg>');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+
+/* text cell */
+.cards-checklist > ul > li > div:last-child {
+  flex: 1 1 auto;
+}
+
+.cards-checklist > ul > li > div:last-child p {
+  margin: 0;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--text-secondary-color);
+  text-align: left;
+}
+
+/* mobile-first: single column, desktop = row of items */
+@media (width >= 900px) {
+  .cards-checklist > ul > li {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
