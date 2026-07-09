@@ -88,7 +88,12 @@ var CustomImportScript = (() => {
       cells.push([imageCell, bodyCell]);
     });
     const block = WebImporter.Blocks.createBlock(document, { name: "cards-overview", cells });
-    element.replaceWith(block);
+    const heading = element.querySelector("h1, h2, h3");
+    if (heading) {
+      element.replaceWith(heading, block);
+    } else {
+      element.replaceWith(block);
+    }
   }
 
   // tools/importer/parsers/columns-feature.js
@@ -187,8 +192,16 @@ var CustomImportScript = (() => {
         ".nbd-header-container",
         ".nbd-navbar-desktop-wrapper",
         ".nbd-social-share-wrapper",
+        ".search-login",
         "#stickyheader",
         ".primarynav",
+        '[id^="NBD_SOCIALSHARE_"]',
+        '[id^="NBD_FOOTER_"]',
+        '[id^="NBD_LISTPOPUP_"]',
+        ".nbd-listpopup-container",
+        "#logincomp",
+        "#searchcomp",
+        ".modal",
         "div.footer",
         "footer.page-footer"
       ]);
@@ -199,7 +212,15 @@ var CustomImportScript = (() => {
         ".nedbank-navigation",
         ".mobile-navigation",
         ".nbd-social-share-wrapper",
+        ".search-login",
         "#stickyheader",
+        '[id^="NBD_SOCIALSHARE_"]',
+        '[id^="NBD_FOOTER_"]',
+        '[id^="NBD_LISTPOPUP_"]',
+        ".nbd-listpopup-container",
+        "#logincomp",
+        "#searchcomp",
+        ".modal",
         "div.footer",
         "footer.page-footer"
       ]);

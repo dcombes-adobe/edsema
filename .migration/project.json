@@ -5,7 +5,7 @@
   "previewSite": "edsema",
   "sites": {
     "edsema": {
-      "libraryUrl": "https://main--sta-boilerplate--aemdemos.aem.page/tools/sidekick/library.json"
+      "libraryUrl": "https://main--edsema--dcombes-adobe.aem.page/tools/sidekick/library.json"
     }
   }
 }
