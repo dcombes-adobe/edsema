@@ -46,5 +46,13 @@ export default function parse(element, { document }) {
   });
 
   const block = WebImporter.Blocks.createBlock(document, { name: 'cards-overview', cells });
-  element.replaceWith(block);
+
+  // Preserve the section heading (e.g. "What we can do for you") as default
+  // content above the block rather than discarding it with the container.
+  const heading = element.querySelector('h1, h2, h3');
+  if (heading) {
+    element.replaceWith(heading, block);
+  } else {
+    element.replaceWith(block);
+  }
 }
